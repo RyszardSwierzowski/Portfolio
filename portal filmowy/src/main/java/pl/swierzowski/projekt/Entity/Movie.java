@@ -18,12 +18,12 @@ public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //todo dodaj url do plakatu filmu
     private String name;
     private LocalDate releaseDate;
     private String description;
     private String promoUrl;
     @OneToMany
-    @JoinColumn( name = "comment_id" )
     private List<Comment> commentList;
 
     public Movie(String name, LocalDate releaseDate, String description, String promoUrl, List<Comment> commentList) {

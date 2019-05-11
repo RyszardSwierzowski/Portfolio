@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import pl.swierzowski.projekt.Entity.Comment;
 import pl.swierzowski.projekt.Entity.Movie;
 import pl.swierzowski.projekt.Entity.User;
 import pl.swierzowski.projekt.Entity.enums.UserType;
@@ -38,16 +39,18 @@ public class ProjektApplication implements CommandLineRunner {
     private void initDatabase() {
 
 // USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER  USER
+        //User user = new User("commentuser", "pass", "xx@xx.com", UserType.STANDARD, new ArrayList<>());
+        //userRepository.save(user);
         userRepository.save(new User("username", "pass", "xx@xx.com", UserType.STANDARD, new ArrayList<>()));
         userRepository.save(new User("username2", "pass", "xx@xx.com", UserType.STANDARD, new ArrayList<>()));
         userRepository.save(new User("admin", "pass", "xx@xx.com", UserType.ADMIN, new ArrayList<>()));
 // COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT  COMMENT
-
+        commentRepository.save(new Comment(1, " content dsadadasds"));
 // MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE  MOVIE
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-        movieRepository.save( new Movie("name", LocalDate.parse("2015-01-01", formatter), "opis", "youtube.com", new ArrayList<>() ));
-
+        movieRepository.save(new Movie("name", LocalDate.parse("2015-01-01", formatter), "opis", "youtube.com", new ArrayList<>()));
+        //System.out.println(commentRepository.findAllByOwnerId(1L));
 
     }
 

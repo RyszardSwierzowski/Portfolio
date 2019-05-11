@@ -30,8 +30,6 @@ public class MovieController {
                 .body(movie);
     }
 
-
-
     @PostMapping("") // dodanie do bazy
     ResponseEntity<Movie> create(@RequestBody Movie movie){
         Movie created = movieRepository.save(movie);

@@ -17,6 +17,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //todo dodaj awatar - nie w konstruktorze ,ale wybierany później
     private String userName;
     private String password;
     private String email;

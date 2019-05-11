@@ -4,11 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.time.LocalDate;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -20,7 +16,14 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long ownerId;
+    private int ownerId;
     private LocalDateTime dateOfCreate;
     private String content;
+
+
+    public Comment(int ownerId, String content) {
+        this.ownerId = ownerId;
+        this.content = content;
+        this.dateOfCreate = LocalDateTime.now();
+    }
 }
