@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.Query;
 import pl.swierzowski.projekt.Entity.Comment;
 import pl.swierzowski.projekt.Entity.Movie;
 import pl.swierzowski.projekt.Entity.User;
@@ -51,6 +52,7 @@ public class ProjektApplication implements CommandLineRunner {
 
         movieRepository.save(new Movie("name", LocalDate.parse("2015-01-01", formatter), "opis", "youtube.com", new ArrayList<>()));
         //System.out.println(commentRepository.findAllByOwnerId(1L));
+
 
     }
 

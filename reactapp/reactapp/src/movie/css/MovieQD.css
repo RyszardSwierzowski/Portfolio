@@ -1,0 +1,47 @@
+
+#mainDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: left;
+
+}
+
+#poster {
+    display: block;
+    margin-right: 10%;
+    height: 197px;
+    width: 150px;
+
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+    float: left;
+
+    background-image: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");
+
+}
+
+#title {
+
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#engTitle {
+    font-size: 10px;
+    color: gray;
+}
+
+#year {
+    font-size: 12px;
+}
+
+#duration{
+    font-size: 10px;
+}
+#description{
+    padding: 10px;
+    font-size: 9px;
+    line-height: normal;
+}

@@ -1,0 +1,12 @@
+#footer {
+    /*margin: 0px;*/
+    /*position:absolute;*/
+    /*bottom:0;*/
+    /*width:100%;*/
+    /*height:60px;		!* Wysokość stopki *!*/
+    background:#282c34;
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+}

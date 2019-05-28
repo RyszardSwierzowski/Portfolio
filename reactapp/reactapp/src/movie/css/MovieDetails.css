@@ -1,0 +1,18 @@
+#mainDivDetails{
+    background: gray;
+    text-align: left;
+    font-size: 11px;
+}
+
+
+#leftDetails{
+    padding: 10px;
+    display: block;
+    color: gold;
+    float: left;
+}
+#rightDetails{
+    padding: 10px;
+    display: block;
+    text-align: left;
+}

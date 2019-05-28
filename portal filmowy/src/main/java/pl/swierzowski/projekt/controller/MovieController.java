@@ -11,12 +11,12 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/movies")
+@RequestMapping("/api/movies")
 public class MovieController {
     @Autowired
     MovieRepository movieRepository;
 
-    @GetMapping("/all")
+    @GetMapping("")
     ResponseEntity<List<Movie>> getAllUsers() {
         return ResponseEntity.ok()
                 .body(movieRepository.findAll());

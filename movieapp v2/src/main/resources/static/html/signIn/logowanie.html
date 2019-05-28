@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logowanie</title>
+    <link rel="stylesheet" type="text/css" href="../../css/logIn.css">
+
+    <script src="../../js/logInPage/logowanie.js"></script>
+<!--    <script src="../../js/logInPage/logIn.js"></script>-->
+<!--    <script src="../../js/logInPage/registration.js"></script>-->
+
+
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+
+</head>
+<body>
+
+
+<div id="mainDiv">
+    <div id="center">
+        <div id="login">
+            <p>Logowanie</p>
+            <form id="logForm" method="post" onsubmit="submitLogin()">
+                <input class="inputs" type="text" id="loginL" value="user1" placeholder="Login" minlength="5" required>
+                <br>
+                <input class="inputs" type="password" id="passwordL" value="root" placeholder="Hasło" minlength="5"
+                       required> <br>
+                <input class="inputs" id="logInBtn" type="submit" value="Zaloguj">
+            </form>
+
+        </div>
+        <div id="registration">
+            <p>Rejestracja</p>
+            <form id="regForm" method="post" onsubmit="register()">
+                <input value="15151" class="inputs" type="text" id="loginR" placeholder="Podaj nowy login" minlength="5"
+                       required> <br>
+                <input value="15151" class="inputs" type="password" id="passwordR" placeholder="Utwórz hasło"
+                       minlength="5" required> <br>
+                <input value="15151@wp.pl" class="inputs" type="email" id="emailR" placeholder="Twój adres e-mail"
+                       required> <br>
+                <input class="inputs" id="registrationBtn" type="submit" value="Zarejestruj">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
