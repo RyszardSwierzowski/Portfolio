@@ -16,7 +16,7 @@ class Menu extends React.Component {
             return (
                 <div id="menuBar">
                     <ul>
-                        <li class="home"><a href="#home"></a></li>
+                        <li class="home"><a href="#home">.</a></li>
                         <li><a href="#news">Profil</a></li>
                         <li><a href="#contact">Filmy</a></li>
                         <li><a href="#about">O Nas</a></li>

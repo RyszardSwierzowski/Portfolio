@@ -1,7 +1,10 @@
 #mainDivDetails{
-    background: gray;
+    /*background: gray;*/
     text-align: left;
     font-size: 11px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

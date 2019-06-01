@@ -1,0 +1,44 @@
+
+#comment {
+    background: bisque;
+    margin: 10px auto;
+    padding: 0px;
+    font-weight: normal;
+    border-radius: 25px;
+    width: 100%;
+
+
+}
+
+#commentHeader {
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: goldenrod;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#commentContent {
+    /*margin-left: 25px;*/
+    /*margin-right: 25px;*/
+    padding: 10px;
+    /*background: darkred;*/
+
+}
+
+#author {
+    text-align: left;
+    /*margin-left: 15px;*/
+    /*background: #4CAF50;*/
+    float: left;
+}
+
+#date {
+    /*background: #61dafb;*/
+    text-align: right;
+}
+#newCommentSection{
+height: 200px;
+}

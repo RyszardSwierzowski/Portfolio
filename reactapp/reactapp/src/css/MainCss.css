@@ -1,9 +1,60 @@
+:root{
 
-#content{
+    --fontColor: red;
+    color: var(--fontColor);
+
+    -green-light:#54c24f;
+    -green-base: #45a340;
+    -green-shadow: rgba(65, 133, 60, 0.78);
+
+    -blue-light:#2864ff;
+    -blue-base: #2251c2;
+    -blue-shadow: rgba(34, 81, 194, 0.78);
+
+    -color-cancel-base: #ff3b35;
+    -color-cancel-hover: #e1322d;
+    -color-cancel-shadow:rgba(194, 46, 41, 0.78);
+
+    -orange-light: #ef8901;
+    -orange-base: #e1713b;
+    -orange-shadow: rgba(194, 95, 54, 0.78);
+
+    -third-backgound:#666;
+    -first-backgound:#333;
+    -second-backgound:#222;
+    -focused-backgound:#a1a1a1;
+
+}
+
+
+body {
+    background: lightgray;
+}
+
+#content {
     height: available;
     background: gray;
-    width: 100%;
+    width: 75%;
     height: available;
-    padding: 25px;
-    margin: 0px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.element_nieparzysty {
+
+    padding: 10px 50px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.element_parzysty {
+    padding: 10px 50px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }

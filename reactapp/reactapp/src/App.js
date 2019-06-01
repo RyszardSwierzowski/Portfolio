@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieFullPage from './movie/MovieFullPage'
+import UserFullPage from './user/UserFullPage'
 
 
 
@@ -13,6 +14,7 @@ class App extends React.Component{
 
         this.state = {
 
+
         };
     }
 
@@ -20,7 +22,7 @@ class App extends React.Component{
 render() {
   return (
       <div >
-          <MovieFullPage />
+          <UserFullPage/>
       </div>
   );
 }

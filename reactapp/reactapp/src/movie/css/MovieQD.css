@@ -4,6 +4,9 @@
     margin-right: auto;
     width: 80%;
     text-align: left;
+    min-height: 200px;
+
+
 
 }
 
@@ -13,7 +16,7 @@
     height: 197px;
     width: 150px;
 
-    background-size: 100%,100%;
+    background-size: 197px, 150px;
     background-repeat: no-repeat;
     float: left;
 
@@ -30,17 +33,19 @@
 
 #engTitle {
     font-size: 10px;
-    color: gray;
+    color: #3c3c3c;
 }
 
 #year {
     font-size: 12px;
 }
 
-#duration{
+#duration {
     font-size: 10px;
 }
-#description{
+
+#description {
+
     padding: 10px;
     font-size: 9px;
     line-height: normal;

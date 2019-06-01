@@ -13,9 +13,11 @@ class MovieQuickDescription extends React.Component {
     render() {
         return (
             <div>
-                <div id="poster"></div>
+
+
 
                 <div id='mainDiv'>
+                    <div id="poster"></div>
                     <div id='title'>
                         <div>{this.props.titlePl} <span id="year">({this.props.year})</span></div>
                         <div id='engTitle'>{this.props.titleEng}</div>
