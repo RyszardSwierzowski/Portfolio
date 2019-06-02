@@ -11,6 +11,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
@@ -20,14 +21,14 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @CrossOrigin
+
     @GetMapping()
     ResponseEntity<List<User>> getAllUsers(){
         System.out.println("xxx");
         return ResponseEntity.ok()
                 .body(userRepository.findAll());
     }
-    @CrossOrigin
+
     @GetMapping("/{id}")
     ResponseEntity<User> getAUser(@PathVariable("id") Long id){
         Optional<User> optionalUser = userRepository.findById(id);

@@ -23,8 +23,8 @@ class App extends React.Component{
 render() {
   return (
       <div >
-          {/*<Logowanie />*/}
-          <UserFullPage/>
+          <Logowanie />
+          {/*<UserFullPage/>*/}
           {/*<MovieFullPage/>*/}
       </div>
   );

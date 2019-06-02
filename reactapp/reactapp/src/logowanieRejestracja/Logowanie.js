@@ -12,9 +12,11 @@ class Logowanie extends React.Component {
         this.bindowanieFormularza = this.bindowanieFormularza.bind(this);
 
         this.state = {
-            loginLogowanie: '',
-            passwordLogowanie: '',
-            data: []
+            userId:null,
+            loginLogowanie: null,
+            passwordLogowanie: null,
+            email:null,
+            data: null
 
         };
     }
@@ -53,21 +55,21 @@ class Logowanie extends React.Component {
     }
 
 
-    // componentDidMount() {
-    //     fetch("http://localhost:8080/api/user/1")
-    //         .then(res => res.json())
-    //         .then(json => ( console.log(this.state.name)))
-    //         .then(console.log(this.state.name));
-    //
-    // }
+
     componentDidMount() {
-         fetch("http://localhost:8080/api/user/1")
+         const f= fetch("http://localhost:8080/api/user/1")
             .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                this.setState({data});
+            .then(json => {
+                this.setState({data:json});
                 console.log(this.state.data);
+                this.setState({userId:json.id});
+                console.log(this.state.userId);
+                this.setState({email:json.email});
+                console.log(this.state.email);
+
+
             });
+
 
     }
 
