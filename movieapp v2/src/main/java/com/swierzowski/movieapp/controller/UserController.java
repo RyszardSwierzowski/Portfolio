@@ -12,16 +12,18 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/user/")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired
     UserService userService;
-
+    @Autowired
     UserRepository userRepository;
 
-    @GetMapping("")
+    @CrossOrigin
+    @GetMapping()
     ResponseEntity<List<User>> getAllUsers(){
+        System.out.println("xxx");
         return ResponseEntity.ok()
                 .body(userRepository.findAll());
     }

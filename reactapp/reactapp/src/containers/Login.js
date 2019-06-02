@@ -23,7 +23,7 @@ import React, { Component } from "react";
     //
     // }
     //
-    // ZmianaWCzasieRzeczywistynInput2(event) {
+    // bindowanieFormularza(event) {
     //     const target = event.target;
     //     const value = target.value;
     //     const state = { ...this.state }

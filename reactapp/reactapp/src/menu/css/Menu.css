@@ -1,56 +1,95 @@
-#menuBar{
+#menuBar {
+    position: fixed;
+    top:0;
+    left:0;
     width: 100%;
-    height:  55px;
-    background: #282c34;
+    height: 55px;
+    background: #222;
     padding-top: 10px;
-    padding-bottom: 10px;
-}
-form{
-    float: left;
+    padding-bottom: 25px;
+    border-bottom: white solid;
+
+    padding-left: 10%;
+
+
 }
 
+form {
+
+    float: left;
+    margin-top: 20px;
+
+
+}
+button,input {
+    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 100px;
+    margin-left: 30px;
+}
 
 
 
 ul {
+    border-width: 10px;
     list-style-type: none;
-    margin: 0;
+    margin-top: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #444;
     float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    padding-right: 50px;
+    padding-right: 50px;
+    text-align: center;
+    min-width: 76%;
 }
 
 li {
+
     float: left;
-    border-right:1px solid #bbb;
+    border: 1px solid #bbb;
     min-width: 70px;
     min-height: 50px;
+    margin: 5px 25px;
+    border-radius: 25px;
+
 }
 
-li:last-child {
-    border-right: none;
-}
+/*li:last-child {*/
+/*    border-right: none;*/
+/*}*/
 
 li a {
+
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+li a:hover:not(.home) {
+    background-color: #888;
+    border-radius: 25px;
+
 }
+
+/*li .home:hover:not(.home) {*/
+/*    background-color: red;*/
+
+/*}*/
 
 .active {
-    background-color: #4CAF50;
+    background-color: #555;
 }
 
-.home {
-    background-image: url(../../img/home-icon-silhouette.png);
-    background-size: 50px,50px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/*.home {*/
+/*    background-image: url(../../img/home-icon-silhouette.png);*/
+/*    background-size: 50px,50px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*}*/

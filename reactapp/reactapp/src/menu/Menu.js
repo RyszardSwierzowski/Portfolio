@@ -7,7 +7,9 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            url: 'https://img.icons8.com/metro/420/home.png'
+        };
     }
 
 
@@ -16,20 +18,18 @@ class Menu extends React.Component {
             return (
                 <div id="menuBar">
                     <ul>
-                        <li class="home"><a href="#home">.</a></li>
+                        <li class="home"><a href="#home"><img src={this.state.url} height="20" width="30" alt="Avatar"/></a>
+                        </li>
                         <li><a href="#news">Profil</a></li>
                         <li><a href="#contact">Filmy</a></li>
                         <li><a href="#about">O Nas</a></li>
-                    </ul>
-
-                    <form>
-                        <input type="text" name="search" placeholder="Szukaj film"/>
-                        <input type="submit" value="Szukaj"></input>
-                    </form>
-
-                    <ul>
                         <li><a href="#home">Wyloguj się</a></li>
+                        <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
+                                                                                                  value="Szukaj"></input>
+                        </form>
                     </ul>
+
+
                 </div>
             )
         } else if (userRole === 'admin') {
@@ -51,8 +51,6 @@ class Menu extends React.Component {
                 </div>
             )
         }
-
-
 
 
     }

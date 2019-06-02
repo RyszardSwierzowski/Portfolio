@@ -29,13 +29,16 @@
 
 body {
     background: lightgray;
+
+    /*padding-top: 100px;*/
+
 }
 
 #content {
-    height: available;
+
     background: gray;
     width: 75%;
-    height: available;
+    min-height: 800px;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -43,8 +46,7 @@ body {
 }
 
 .element_nieparzysty {
-
-    padding: 10px 50px;
+    padding: 10px 50px 100px;
     background: #333;
     margin-top: 10px;
     margin-bottom: 5px;

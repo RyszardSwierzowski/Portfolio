@@ -1,6 +1,8 @@
-.fullPageBody{
+#fullPageBody{
+    margin-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
+
 }
 
 #commentsDiv{

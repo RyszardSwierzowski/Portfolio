@@ -1,27 +1,29 @@
 import React from 'react';
+import './css/UserFullPage.css'
 
 
-class App extends React.Component{
+class UserInfo extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-
-
-        };
+        this.state = {};
     }
 
 
     render() {
         return (
-            <div >
-                <div>
-                    <div><img src={this.props.avatarUrl} alt="Avatar" height="100" width="100"/></div>
-                    <div>Witaj {this.props.userName}</div>
-
+            <div class="element_nieparzysty">
+                <div class="lewyDivTest">
+                    <img src={this.props.avatarUrl} alt="Avatar" height="100" width="100"/>
+                    <br/>Witaj {this.props.userName}
                 </div>
 
-
+                <div class="ostatniWLini">
+                    <p>Twoje dane : </p>
+                    <p>login : {this.props.userName}</p>
+                    <p>email : {this.props.email}</p>
+                    <p></p>
+                </div>
 
 
 
@@ -30,4 +32,4 @@ class App extends React.Component{
     }
 }
 
-export default App;
+export default UserInfo;

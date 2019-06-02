@@ -13,7 +13,8 @@ class Stopka extends React.Component {
     render() {
         return (
             <div id="footer">
-                stopka
+                <p>Portal filmowy</p>
+                <p>Wykonali : Ryszard Świerzowski & Marcin Rosół 2019</p>
             </div>
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieFullPage from './movie/MovieFullPage'
 import UserFullPage from './user/UserFullPage'
+import Logowanie from './logowanieRejestracja/Logowanie'
 
 
 
@@ -22,7 +23,9 @@ class App extends React.Component{
 render() {
   return (
       <div >
-          <UserFullPage/>
+          {/*<Logowanie />*/}
+          {/*<UserFullPage/>*/}
+          <MovieFullPage/>
       </div>
   );
 }
