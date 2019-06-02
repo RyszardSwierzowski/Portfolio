@@ -14,7 +14,7 @@ class Logowanie extends React.Component {
         this.state = {
             loginLogowanie: '',
             passwordLogowanie: '',
-            name: null
+            data: []
 
         };
     }
@@ -56,8 +56,20 @@ class Logowanie extends React.Component {
     // componentDidMount() {
     //     fetch("http://localhost:8080/api/user/1")
     //         .then(res => res.json())
-    //         .then(json => this.setState({ contacts: json.results }));
+    //         .then(json => ( console.log(this.state.name)))
+    //         .then(console.log(this.state.name));
+    //
     // }
+    componentDidMount() {
+         fetch("http://localhost:8080/api/user/1")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                this.setState({data});
+                console.log(this.state.data);
+            });
+
+    }
 
 
     render() {

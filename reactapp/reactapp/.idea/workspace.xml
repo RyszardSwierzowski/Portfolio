@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc998f9-2627-4cf5-a36d-9dbfe65dc383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/MainCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/MainCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/css/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/css/Menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/MovieFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/MovieFullPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/css/movieFullPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/css/movieFullPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stopka/Stopka.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stopka/Stopka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stopka/css/Stopka.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stopka/css/Stopka.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserFullPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/css/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/css/UserFullPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="782">
-              <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -53,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/movie/css/movieFullPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="60">
               <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
@@ -62,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="540">
+              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -74,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="52">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="100">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
@@ -95,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="60">
               <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
@@ -152,14 +143,14 @@
         <option value="$PROJECT_DIR$/src/movie/MovieFullPage.js" />
         <option value="$PROJECT_DIR$/src/movie/css/movieFullPage.css" />
         <option value="$PROJECT_DIR$/src/css/MainCss.css" />
-        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/menu/css/Menu.css" />
         <option value="$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css" />
+        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="width" value="1027" />
     <option name="height" value="1087" />
@@ -304,16 +295,17 @@
       <workItem from="1559209881442" duration="9887000" />
       <workItem from="1559314246055" duration="2369000" />
       <workItem from="1559467437530" duration="19894000" />
+      <workItem from="1559492428734" duration="3184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51624000" />
+    <option name="totallyTimeSpent" value="54808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="0" width="1027" height="1087" extended-state="1" />
+    <frame x="74" y="-8" width="1854" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19110212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10407489" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -529,17 +521,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/css/movieFullPage.css">
+    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="100">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
-          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -553,34 +552,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/css/movieFullPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="52">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="540">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

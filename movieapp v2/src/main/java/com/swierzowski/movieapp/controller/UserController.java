@@ -27,7 +27,7 @@ public class UserController {
         return ResponseEntity.ok()
                 .body(userRepository.findAll());
     }
-
+    @CrossOrigin
     @GetMapping("/{id}")
     ResponseEntity<User> getAUser(@PathVariable("id") Long id){
         Optional<User> optionalUser = userRepository.findById(id);

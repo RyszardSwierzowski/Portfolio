@@ -24,8 +24,8 @@ render() {
   return (
       <div >
           {/*<Logowanie />*/}
-          {/*<UserFullPage/>*/}
-          <MovieFullPage/>
+          <UserFullPage/>
+          {/*<MovieFullPage/>*/}
       </div>
   );
 }
