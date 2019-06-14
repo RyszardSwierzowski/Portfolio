@@ -1,5 +1,6 @@
 package com.swierzowski.movieapp.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -19,26 +20,20 @@ public class User {
     private long id;
     @Column(unique = true, nullable = false)
     private String name;
-    //    @JsonIgnore
     @Column(nullable = false)
     private String password;
     @Column(unique = true, nullable = false)
     private String email;
     @Enumerated(EnumType.STRING)
     private UserRole role;
-
+    private String avatarUrl;
+    @JsonIgnore
     @OneToMany
     List<Movie> favoritesList;
 
     public User() {
-        this.role =UserRole.ROLE_NORMAL;
+        this.role = UserRole.ROLE_NORMAL;
     }
-
-
-
-
-
-
 
 
     @Override

@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/Favorites.css'
 
 
 class Favorites extends React.Component{
@@ -15,8 +16,8 @@ class Favorites extends React.Component{
     render() {
         return (
             <div >
-                <div>
-                    <h2>Twoje ulubione filmy</h2>
+                <div id="favoriteMovie">
+                    {this.props.id}
 
                 </div>
 

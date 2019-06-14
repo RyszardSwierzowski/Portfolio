@@ -17,16 +17,23 @@ public class RegistrationController {
     UserRepository userRepository;
 
     @CrossOrigin
-    @GetMapping()
-    public ResponseEntity<String> registration(@RequestHeader User user) {
+    @PostMapping()
+    public ResponseEntity<User> registration(@RequestBody User user) {
 
         if (userService.isExist(user) == false){
             userRepository.save(user);
             return ResponseEntity.ok()
-                    .body("");
+                    .body(user);
         }
-        return ResponseEntity.status(HttpStatus.CONFLICT)
-                .body("x");
+        User invalidUser = new User();
+        invalidUser.setId(-1L);
+        if(userRepository.findByName(user.getName()).isPresent())
+            invalidUser.setName(user.getName());
+        if(userRepository.findByEmail(user.getEmail()).isPresent())
+            invalidUser.setEmail(user.getEmail());
+//        System.out.println(invalidUser);
+        return ResponseEntity.ok()
+                .body(invalidUser);
     }
 
 }

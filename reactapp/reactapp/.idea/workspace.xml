@@ -2,10 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc998f9-2627-4cf5-a36d-9dbfe65dc383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/Entity/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/Entity/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/Entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/Entity/enums/UserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/ProjektApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/controller/MovieController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/repository/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/repository/MovieRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/model/CustomUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/model/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/repository/UsersRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/resource/HelloResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/java/pl/swierzowski/projekt/testSecurity/service/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portal filmowy/src/test/java/pl/swierzowski/projekt/ProjektApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Favorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserFullPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/out/production/untitled/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/src/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/untitled.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+            <state relative-caret-position="850">
+              <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -32,28 +80,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/MainCss.css">
+        <entry file="file://$PROJECT_DIR$/src/comment/Comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/movie/css/movieFullPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,35 +92,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
+        <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="612">
+              <caret line="68" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#498#572#0" />
-                <element signature="e#615#746#0" />
-                <element signature="e#770#814#0" />
-                <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css">
+        <entry file="file://$PROJECT_DIR$/src/user/Favorites.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="289">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
+        <entry file="file://$PROJECT_DIR$/src/user/css/Favorites.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="17">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +141,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -110,6 +151,10 @@
       <find>padd</find>
       <find>100</find>
       <find>wid</find>
+      <find>passwordRejestracja2</find>
+      <find>loginRejestracja</find>
+      <find>exportAllComments</find>
+      <find>favor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,10 +181,8 @@
         <option value="$PROJECT_DIR$/src/comment/css/comment.css" />
         <option value="$PROJECT_DIR$/src/comment/AddNewComment.js" />
         <option value="$PROJECT_DIR$/src/user/css/UserFullPage.js" />
-        <option value="$PROJECT_DIR$/src/user/Favorites.js" />
         <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
         <option value="$PROJECT_DIR$/src/user/css/UserFullPage.css" />
-        <option value="$PROJECT_DIR$/src/user/UserFullPage.js" />
         <option value="$PROJECT_DIR$/src/stopka/Stopka.js" />
         <option value="$PROJECT_DIR$/src/stopka/css/Stopka.css" />
         <option value="$PROJECT_DIR$/src/menu/Menu.js" />
@@ -150,6 +193,10 @@
         <option value="$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
+        <option value="$PROJECT_DIR$/src/movie/css/Favorites.css" />
+        <option value="$PROJECT_DIR$/src/user/Favorites.js" />
+        <option value="$PROJECT_DIR$/src/user/css/Favorites.css" />
+        <option value="$PROJECT_DIR$/src/user/UserFullPage.js" />
       </list>
     </option>
   </component>
@@ -183,27 +230,13 @@
               <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="logowanieRejestracja" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="logowanieRejestracja" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
@@ -216,19 +249,6 @@
               <item name="reactapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="movie" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stopka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stopka" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rysza\Desktop\Portfolio\reactapp\reactapp\src\user\css" />
       <recent name="C:\Users\rysza\Desktop\Portfolio\reactapp\reactapp\src\comment" />
       <recent name="C:\Users\rysza\Desktop\Portfolio\reactapp\reactapp\src\img" />
       <recent name="C:\Users\rysza\Desktop\Portfolio\reactapp\reactapp\src\stopka\css" />
@@ -300,17 +321,18 @@
       <workItem from="1559467437530" duration="19894000" />
       <workItem from="1559492428734" duration="3184000" />
       <workItem from="1559499253700" duration="2240000" />
+      <workItem from="1560493763022" duration="26686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57048000" />
+    <option name="totallyTimeSpent" value="83734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1040305" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23257081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -324,19 +346,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22753346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23257081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +366,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -386,16 +408,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/comment/Comments.js" />
-    <entry file="file://$PROJECT_DIR$/src/comment/Comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/movie/MovieQuickDescription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -458,27 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/Favorites.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="1145" column="8" selection-start-line="1145" selection-start-column="8" selection-end-line="1145" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,16 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/MainCss.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -564,26 +549,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="697">
+          <caret line="124" column="17" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="124" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comment/Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#498#572#0" />
-            <element signature="e#615#746#0" />
-            <element signature="e#770#814#0" />
-            <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/css/Favorites.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/Favorites.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

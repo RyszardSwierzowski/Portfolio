@@ -39,9 +39,26 @@ public class Application implements CommandLineRunner {
         User user1 = new User();
         User user2 = new User();
 
+        Movie movie1 = new Movie();
+        movie1.setTitle("Titanic");
+        movie1.setDescription("Tonąca łajba");
+        movie1.setDirector("Nagrywajacy patykiem");
+        Movie movie2 = new Movie();
+        movie2.setTitle("King Kong");
+        movie2.setDescription("Małpa na sterydach");
+        movie2.setDirector("Antoni");
+
+        movieRepository.save(movie1);
+        movieRepository.save(movie2);
+
         user1.setName("user1");
         user1.setPassword("root");
         user1.setEmail("xxx@x.com");
+        List<Movie> listaUlubionych = new ArrayList<>();
+        listaUlubionych.add(movie1);
+        listaUlubionych.add(movie2);
+
+        user1.setFavoritesList(listaUlubionych);
 
         user2.setName("user2");
         user2.setPassword("root");
@@ -49,17 +66,7 @@ public class Application implements CommandLineRunner {
         userService.save(user1);
         userService.save(user2);
 
-        Movie movie1 = new Movie();
-            movie1.setTitle("Titanic");
-            movie1.setDescription("Tonąca łajba");
-            movie1.setDirector("Nagrywajacy patykiem");
-        Movie movie2 = new Movie();
-            movie2.setTitle("King Kong");
-            movie2.setDescription("Małpa na sterydach");
-            movie2.setDirector("Antoni");
 
-        movieRepository.save(movie1);
-        movieRepository.save(movie2);
         Comment comment = new Comment();
         comment.setUserID(user1);
         comment.setContent("taki tam komentarz");

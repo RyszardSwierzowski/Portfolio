@@ -24,7 +24,7 @@ public class Movie {
 
     private String trailerUrl;
     private String imgUrl;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "movie_id",referencedColumnName="id")
     List<Comment> commentList;
     //List<Integer> gradeList;
