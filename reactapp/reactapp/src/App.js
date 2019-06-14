@@ -22,11 +22,11 @@ class App extends React.Component {
         return (
             <Router>
                 <Switch>
-                    <div>
+
                         <Route exact path='/' component={Logowanie}/>
-                        <Route path='/loggedUser/:nick' component={UserFullPage}/>
+                        <Route exact path='/loggedUser/:nick' component={UserFullPage}/>
                         {/*<Route component={NotFound} /> */}
-                    </div>
+
                 </Switch>
                 {/*<div>*/}
                 {/*    */}

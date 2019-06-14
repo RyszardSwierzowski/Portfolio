@@ -8,6 +8,7 @@ import Stopka from '../stopka/Stopka'
 import Menu from '../menu/Menu'
 import axios from 'axios'
 import Comment from "../comment/Comment";
+import {delay} from "q";
 
 
 class UserFullPage extends React.Component {
@@ -26,29 +27,31 @@ class UserFullPage extends React.Component {
         };
     }
 
-    componentDidMount =  () => {
+    componentDidMount =  async () => {
         if (!sessionStorage.getItem('userId'))
             window.location.replace('/')
         else {
 
-            const f =
+            const f = await
                 fetch("http://localhost:8080/api/user/1")
                     .then(res => res.json())
                     .then(json => {
                         this.setState({userName: json.name});
                         this.setState({email: json.email});
                     });
-            const f2 =
+            const f2 = await
                 fetch("http://localhost:8080/api/user/favorites/" + sessionStorage.getItem('userId'))
                     .then(res => res.json())
                     .then(json => {
 
                         this.setState({favorites: json});
 
+                        console.log(this.state.favorites)
+
 
                     });
 
-
+            console.log(this.state.favorites)
             if (this.state.avatarUrl === '') {
                 this.setState({avatarUrl: this.state.defaultAvatarUrl})
             }
@@ -57,20 +60,27 @@ class UserFullPage extends React.Component {
 
     }
 
+    // exportAllFavorites = () => {
+    //     let allFavorites = []
+    //
+    //
+    //
+    //     for (let i = 0; i < this.state.favorites.length; i++) {
+    //         let movie = this.state.favorites.pop()
+    //         if (movie != null)
+    //             allFavorites.push(<UserFavorites id={movie}/>)
+    //     }
+    //     return allFavorites;
+    // }
     exportAllFavorites = () => {
         let allFavorites = []
-        this.state.favorites.forEach(item=>{let movie = this.state.favorites.pop()
+        this.state.favorites.forEach(item => allFavorites.push(<UserFavorites id={item}/>))
 
-                allFavorites.push(<UserFavorites id={movie}/>)})
-        for (let i = 0; i < 50; i++) {
-            let movie = this.state.favorites.pop()
-            if (movie != null)
-                allFavorites.push(<UserFavorites id={movie}/>)
-        }
         return allFavorites;
     }
 
     render() {
+
         if (sessionStorage.getItem('token'))
             return (<div>
                     <Menu/>
