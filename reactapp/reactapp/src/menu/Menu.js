@@ -35,6 +35,10 @@ class Menu extends React.Component {
         window.location.replace(this.state.defaultUrl+'loggedUser/'+sessionStorage.getItem('userId'));
 
     }
+    oNas= () => {
+        window.location.replace(this.state.defaultUrl+'aboutUs');
+
+    }
 
 
 
@@ -50,7 +54,7 @@ class Menu extends React.Component {
                             <Link>Filmy</Link>
                         </li>
                         <li>
-                            <Link>O Nas</Link>
+                            <Link onClick={this.oNas}>O Nas</Link>
                         </li>
                         <li>
                             <Link onClick={this.zaloguj}>Zaloguj się</Link>

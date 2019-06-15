@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import MovieFullPage from './movie/MovieFullPage'
 import UserFullPage from './user/UserFullPage'
 import Logowanie from './logowanieRejestracja/Logowanie'
+import AboutUs from './aboutUs/AboutUs'
 
 
 
@@ -27,6 +28,7 @@ class App extends React.Component {
                         <Route exact path='/' component={Logowanie}/>
                         <Route exact path='/loggedUser/:nick' component={UserFullPage}/>
                         <Route exact path='/movie/:movieId' component={MovieFullPage}/>
+                        <Route exact path='/aboutUs' component={AboutUs}/>
 
                         {/*<Route component={NotFound} /> */}
 
