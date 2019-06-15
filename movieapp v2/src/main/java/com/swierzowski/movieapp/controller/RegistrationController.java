@@ -31,7 +31,7 @@ public class RegistrationController {
             invalidUser.setName(user.getName());
         if(userRepository.findByEmail(user.getEmail()).isPresent())
             invalidUser.setEmail(user.getEmail());
-//        System.out.println(invalidUser);
+
         return ResponseEntity.ok()
                 .body(invalidUser);
     }

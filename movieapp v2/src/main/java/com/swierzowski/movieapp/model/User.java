@@ -8,6 +8,7 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -29,7 +30,7 @@ public class User {
     private String avatarUrl;
     @JsonIgnore
     @OneToMany
-    List<Movie> favoritesList;
+    Set<Movie> favoritesList;
 
     public User() {
         this.role = UserRole.ROLE_NORMAL;

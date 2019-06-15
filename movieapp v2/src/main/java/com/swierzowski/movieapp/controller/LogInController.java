@@ -24,7 +24,6 @@ public class LogInController {
     @PostMapping()
     public ResponseEntity<User> logInGet(@RequestBody User user) {
         User resultUser =  new User();
-//        System.out.println(user);
         Optional<User> userFromDatabase = userRepository.findByNameAndPassword(user.getName(), user.getPassword());
 
         if (!userFromDatabase.isPresent()){

@@ -7,8 +7,7 @@ import UserFullPage from './user/UserFullPage'
 import Logowanie from './logowanieRejestracja/Logowanie'
 
 
-export let userRole = 'user';
-export let userId = 1;
+
 
 export let apiHostUrl ='http://localhost:8080'
 

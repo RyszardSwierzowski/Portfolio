@@ -12,6 +12,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @CrossOrigin
@@ -27,7 +28,7 @@ public class UserController {
 
     @GetMapping()
     ResponseEntity<List<User>> getAllUsers(){
-        System.out.println("xxx");
+
         return ResponseEntity.ok()
                 .body(userRepository.findAll());
     }
@@ -44,12 +45,12 @@ public class UserController {
     ResponseEntity<List<Long>> getFavoritesByUser(@PathVariable("userId") Long id){
         Optional<User> optionalUser = userRepository.findById(id);
         List<Long> resultList = new ArrayList<>();
-        List<Movie> tempList = new ArrayList<>();
+        Set<Movie> tempList ;
         if(optionalUser.isPresent()){
             tempList = optionalUser.get().getFavoritesList();
             resultList = tempList.stream()
                     .map(m->m.getId()).collect(Collectors.toList());
-            System.out.println(resultList);
+
             return ResponseEntity.ok()
                     .body(resultList);
         }else {

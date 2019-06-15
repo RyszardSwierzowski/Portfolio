@@ -14,9 +14,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
@@ -74,7 +72,7 @@ public class Application implements CommandLineRunner {
         user1.setName("user1");
         user1.setPassword("root");
         user1.setEmail("xxx@x.com");
-        List<Movie> listaUlubionych = new ArrayList<>();
+        Set<Movie> listaUlubionych = new HashSet<>();
         listaUlubionych.add(movie1);
         listaUlubionych.add(movie2);
 

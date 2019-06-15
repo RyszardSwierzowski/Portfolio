@@ -16,8 +16,9 @@ class AddNewComment extends React.Component {
         };
     }
 
+
     dodajKomentarz =  () => {
-      
+
 
         if (sessionStorage.getItem('userId'))
         {

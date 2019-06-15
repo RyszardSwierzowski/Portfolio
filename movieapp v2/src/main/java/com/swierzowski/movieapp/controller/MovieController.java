@@ -41,9 +41,7 @@ public class MovieController {
                     .sorted(Comparator.comparing(Comment::getId))
                     .collect(Collectors.toList());
             resulMovie.setCommentList(commentList);
-//            optionalMovie.get()
-//                    .getCommentList()
-//                    .forEach(System.out::println);
+
         }
 
         else

@@ -33,7 +33,7 @@ class UserFullPage extends React.Component {
             window.location.replace('/')
         else {
             const f = await
-                fetch("http://localhost:8080/api/user/1")
+                fetch("http://localhost:8080/api/user/"+this.props.match.params.nick)
                     .then(res => res.json())
                     .then(json => {
                         this.setState({userName: json.name});
@@ -60,18 +60,7 @@ class UserFullPage extends React.Component {
 
     }
 
-    // exportAllFavorites = () => {
-    //     let allFavorites = []
-    //
-    //
-    //
-    //     for (let i = 0; i < this.state.favorites.length; i++) {
-    //         let movie = this.state.favorites.pop()
-    //         if (movie != null)
-    //             allFavorites.push(<UserFavorites id={movie}/>)
-    //     }
-    //     return allFavorites;
-    // }
+
     exportAllFavorites = () => {
         let allFavorites = []
         this.state.favorites.forEach(item => allFavorites.push(<UserFavorites id={item}/>))

@@ -36,7 +36,7 @@ public class CommentController {
         list = list.replace("}","");
         list = list.replace(" ","");
         list = list.replace("\n","");
-        System.out.println(list);
+
         String[] test = list.split(",");
         for(int i =0;i<test.length; i++)
         {
@@ -58,8 +58,7 @@ public class CommentController {
             comment.setUserID(optionalUser.get());
             commentService.addComment(movieId,comment);
         }
-        System.out.println("MiD"+ movieId);
-        System.out.println(comment);
+
 
 
     }
