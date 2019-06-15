@@ -1,13 +1,24 @@
 
 #comment {
-    background: bisque;
+    background: #696969;
     margin: 10px auto;
     padding: 0px;
     font-weight: normal;
     border-radius: 25px;
     width: 100%;
+    text-align: center;
 
 
+}
+
+#noComments {
+    background: #696969;
+    margin: 10px auto;
+    padding: 5%;
+    font-weight: normal;
+    border-radius: 25px;
+    width: 80%;
+    text-align: center;
 }
 
 #commentHeader {
@@ -15,9 +26,10 @@
     /*margin-right: auto;*/
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background: goldenrod;
+    background: grey;
     padding-left: 20px;
     padding-right: 20px;
+    color: goldenrod;
 }
 
 #commentContent {
@@ -39,6 +51,52 @@
     /*background: #61dafb;*/
     text-align: right;
 }
-#newCommentSection{
-height: 200px;
+
+#newCommentSection {
+    display: block;
+    background: grey;
+    min-height: 200px;
+    width: 100%;
+
+    border-radius: 25px;
+
+
+}
+
+#newCommentForm {
+    display: inline;
+    /*background: #45a340;*/
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-rights: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+#commitButon{
+    background: #444;
+    height: 110px;
+    width: 60px;
+    vertical-align: top;
+    background-image: url("../../img/pencil.png");
+    background-size: 50px 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: #333333 solid;
+}
+#commitButon:hover{
+    background: #555;
+    background-image: url("../../img/pencil.png");
+    background-size: 50px 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+#textArea{
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
 }

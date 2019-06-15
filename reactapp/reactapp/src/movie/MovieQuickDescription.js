@@ -12,11 +12,7 @@ class MovieQuickDescription extends React.Component {
 
     render() {
         return (
-            <div>
-
-
-
-                <div id='mainDiv'>
+            <div id="mainDiv">
                     <div id="poster"><img src={this.props.imgUrl} alt="plakat filmu" height="197" width="150"/></div>
                     <div id='title'>
 
@@ -25,7 +21,7 @@ class MovieQuickDescription extends React.Component {
                         <div id='duration'>{this.props.duration} </div>
                         <div id='description'>{this.props.description} </div>
                     </div>
-                </div>
+
             </div>
 
 

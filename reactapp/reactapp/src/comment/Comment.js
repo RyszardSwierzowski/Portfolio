@@ -11,17 +11,27 @@ class Comment extends React.Component {
 
 
     render() {
-        return (
-            <div id="comment">
-                <div id='commentHeader'>
-                    <div id="author">author : {this.props.author}</div>
-                    <div id="date">date : {this.props.date}</div>
+        if (this.props.author === 'none')
+            return (
+
+                <div id="noComments">
+                    <h2>Film nie posiada jeszcze komentarzy</h2>
                 </div>
-                <div id="commentContent">
-                    {this.props.content}
+            );
+        else
+            return (
+                <div id="comment">
+                    <div id='commentHeader'>
+                        <div id="author">author : {this.props.author}</div>
+                        <div id="date">date : {this.props.date}</div>
+                    </div>
+                    <div id="commentContent">
+                        {this.props.content}
+                    </div>
                 </div>
-            </div>
-        );
+            );
+
+
     }
 }
 

@@ -18,18 +18,8 @@ class MovieFullPage extends React.Component {
         super(props);
 
         this.state = {
-            titlePl: 'titlePl',
-            titleEng: 'titleEng',
-            year: 'year',
-            duration: 'duration',
-            description: 'description',
-            director: 'director',
-            sredniaOcena: 'sredniaOcena',
-            movieType: 'xx',
-            production: 'xx',
-            premiere: 'xx',
-            boxOffice: 'xx',
-            imgUrl: 'xx',
+
+            sredniaOcena: '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
 
 
             allComments: []
@@ -38,7 +28,7 @@ class MovieFullPage extends React.Component {
     }
 
 
-    componentWillMount =  () => {
+    componentWillMount = () => {
 
         const f =
             fetch("http://localhost:8080/api/movie/" + this.props.match.params.movieId)
@@ -57,6 +47,8 @@ class MovieFullPage extends React.Component {
                     this.setState({premiere: json.premiere});
                     this.setState({boxOffice: json.boxOffice});
                     this.setState({imgUrl: json.imgUrl});
+                    this.setState({trailerUrl: json.trailerUrl});
+                    this.setState({allCommentSize: json.commentList.length})
                     this.setState({allComments: json.commentList});
 
 
@@ -68,7 +60,14 @@ class MovieFullPage extends React.Component {
 
     exportAllComments = () => {
         let allComments = []
-        this.state.allComments.forEach(item => allComments.push(<Comment author={item.userID.name}  content={item.content} date={item.creationDate}/>))
+        if (this.state.allCommentSize === 0)
+            allComments.push(<Comment author='none'/>)
+        else {
+            this.state.allComments.forEach(item => allComments.push(<Comment author={item.userID.name}
+                                                                             content={item.content}
+                                                                             date={item.creationDate}/>))
+        }
+
         return allComments;
     }
 
@@ -82,7 +81,7 @@ class MovieFullPage extends React.Component {
                 <div id="fullPageBody">
 
                     <div id="content">
-                        <div class="element_nieparzysty">
+                        <div class="element_Renderowany">
                             <MovieQuickDescription
                                 imgUrl={this.state.imgUrl}
                                 titlePl={this.state.titlePl}
@@ -93,7 +92,7 @@ class MovieFullPage extends React.Component {
                             />
                         </div>
 
-                        <div className="element_parzysty">
+                        <div className="element_Renderowany">
                             <MovieDetails
                                 director={this.state.director}
                                 sredniaOcena={this.state.sredniaOcena}
@@ -104,26 +103,29 @@ class MovieFullPage extends React.Component {
                             />
                         </div>
 
-                        <div className="element_nieparzysty">
-                            <MovieTrailer urlId="kRPhuj8f_3U"/>
+                        <div className="element_Renderowany">
+                            <MovieTrailer trailerUrl={this.state.trailerUrl}/>
                         </div>
-                        <div className="element_parzysty">
+
+                        <div className="element_Renderowany">
                             <Recenzje/>
                         </div>
-                        <div className="element_nieparzysty">
-                            <div id="commentsDiv">
-                                KOMENTARZE
-                                {this.exportAllComments()}
-                                <AddNewComment/>
 
+                        <div className="element_Renderowany">
+                            KOMENTARZE
+                            {this.exportAllComments()}
+                        </div>
 
-                            </div>
+                        <div className="element_Renderowany">
+                            DODAJ KOMENTARZ
+                            <AddNewComment movieId={this.props.match.params.movieId}/>
                         </div>
 
 
                     </div>
-                    <Stopka/>
+
                 </div>
+                <Stopka/>
             </div>
         );
     }

@@ -87,14 +87,14 @@ class UserFullPage extends React.Component {
                     <div id="body">
 
                         <div id="content">
-                            <div className="element_nieparzysty">
+                            <div className="element_Renderowany">
                                 <UserInfo
                                     userName={this.state.userName}
                                     email={this.state.email}
                                     avatarUrl={this.state.avatarUrl}
                                 />
                             </div>
-                            <div className="element_parzysty">
+                            <div className="element_Renderowany">
                                 <h2>Twoje ulubione filmy</h2>
                                 {this.exportAllFavorites()}
 

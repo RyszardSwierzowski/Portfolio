@@ -1,5 +1,6 @@
 package com.swierzowski.movieapp.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 @ToString
 
 @Entity
+
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,4 +22,7 @@ public class Comment {
     private User userID;
     private LocalDateTime creationDate;
     private String content;
+
+
 }
+

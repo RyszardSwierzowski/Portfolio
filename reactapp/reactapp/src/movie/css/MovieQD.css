@@ -1,11 +1,10 @@
 
 #mainDiv {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin: auto;
+    padding: 25px;
+    width: 95%;
     text-align: left;
-    min-height: 200px;
-
+    min-height: 197px;
 
 
 }
@@ -18,9 +17,8 @@
     padding: 1px;
 
 
-
     float: left;
-    background: white;
+    background: silver;
 
     /*background-image: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");*/
 
@@ -28,18 +26,20 @@
 
 #title {
 
-    font-size: 20px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
 }
 
 #engTitle {
-    font-size: 10px;
-    color: #3c3c3c;
+    font-size: 15px;
+    color: rgba(60, 7, 4, 0.85);
 }
 
 #year {
-    font-size: 12px;
+
+    font-size: 20px;
+    vertical-align: super;
 }
 
 #duration {
@@ -49,6 +49,6 @@
 #description {
 
     padding: 10px;
-    font-size: 9px;
+    font-size: 15px;
     line-height: normal;
 }

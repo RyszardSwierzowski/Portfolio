@@ -13,7 +13,7 @@ class UserInfo extends React.Component {
 
     render() {
         return (
-            <div class="element_nieparzysty">
+            <div class="element_Renderowany">
                 <div class="lewyDivTest">
                     <img src={this.props.avatarUrl} alt="Avatar" height="100" width="100"/>
                     <br/>Witaj {this.props.userName}

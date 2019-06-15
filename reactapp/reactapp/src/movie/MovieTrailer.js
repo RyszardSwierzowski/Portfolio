@@ -16,7 +16,7 @@ class MovieTrailer extends React.Component {
             <div id="videoTrailer">
 
                 <iframe width="560" height="315"
-                        src={'https://www.youtube.com/embed/' + this.props.urlId}
+                        src={this.props.trailerUrl}
                         frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
             </div>
 
