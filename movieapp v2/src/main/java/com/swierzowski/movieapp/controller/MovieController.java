@@ -11,6 +11,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/movie/")
 public class MovieController {
@@ -28,10 +29,15 @@ public class MovieController {
 
     @GetMapping("/{id}")
     ResponseEntity<Movie> getMovie(@PathVariable("id") Long id){
-        Optional<Movie> optionalUser = movieRepository.findById(id);
-        Movie movie = optionalUser.orElseThrow(()-> new EntityNotFoundException("User not found"));
+        Optional<Movie> optionalMovie = movieRepository.findById(id);
+        Movie resulMovie = new Movie();
+        if(optionalMovie.isPresent())
+            resulMovie = optionalMovie.get();
+        else
+            resulMovie.setId(-1L);
         return ResponseEntity.ok()
-                .body(movie);
+                .body(resulMovie);
+
     }
 
     @PostMapping("")

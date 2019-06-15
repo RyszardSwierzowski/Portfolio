@@ -9,6 +9,7 @@ import Menu from '../menu/Menu'
 import axios from 'axios'
 import Comment from "../comment/Comment";
 import {delay} from "q";
+import {apiHostUrl} from '../App'
 
 
 class UserFullPage extends React.Component {
@@ -31,7 +32,6 @@ class UserFullPage extends React.Component {
         if (!sessionStorage.getItem('userId'))
             window.location.replace('/')
         else {
-
             const f = await
                 fetch("http://localhost:8080/api/user/1")
                     .then(res => res.json())

@@ -15,12 +15,14 @@
     margin-right: 10%;
     height: 197px;
     width: 150px;
+    padding: 1px;
 
-    background-size: 197px, 150px;
-    background-repeat: no-repeat;
+
+
     float: left;
+    background: white;
 
-    background-image: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");
+    /*background-image: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");*/
 
 }
 

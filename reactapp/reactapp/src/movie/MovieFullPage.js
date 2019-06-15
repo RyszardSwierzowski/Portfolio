@@ -9,6 +9,8 @@ import Menu from '../menu/Menu'
 import Comment from '../comment/Comment'
 import AddNewComment from '../comment/AddNewComment'
 import '../css/MainCss.css'
+import UserFavorites from "../user/Favorites";
+import {delay} from "q";
 
 
 class MovieFullPage extends React.Component {
@@ -16,34 +18,65 @@ class MovieFullPage extends React.Component {
         super(props);
 
         this.state = {
-            allComments: [
-                {
-                    author: 'autor12',
-                    date: '11/10/2015',
-                    content: 'dasdasf sda ds dnas dasd asla,.sma s. gmagnag lsdadas sdasdad inkal'
-                },
-                {
-                    author: 'autor1',
-                    date: '5/11/2019',
-                    content: 'polecam'
-                }
-            ],
-            test: 'xxx'
+            titlePl: 'titlePl',
+            titleEng: 'titleEng',
+            year: 'year',
+            duration: 'duration',
+            description: 'description',
+            director: 'director',
+            sredniaOcena: 'sredniaOcena',
+            movieType: 'xx',
+            production: 'xx',
+            premiere: 'xx',
+            boxOffice: 'xx',
+            imgUrl: 'xx',
+
+
+            allComments: []
+
         };
     }
 
+
+    componentWillMount =  () => {
+
+        const f =
+            fetch("http://localhost:8080/api/movie/" + this.props.match.params.movieId)
+                .then(res => res.json())
+                .then(json => {
+                    console.log(json.commentList)
+                    console.log(json)
+
+                    this.setState({titlePl: json.titlePl});
+                    this.setState({titleEng: json.titleEng});
+                    this.setState({duration: json.duration});
+                    this.setState({description: json.description});
+                    this.setState({director: json.director});
+                    this.setState({movieType: json.movieType});
+                    this.setState({production: json.production});
+                    this.setState({premiere: json.premiere});
+                    this.setState({boxOffice: json.boxOffice});
+                    this.setState({imgUrl: json.imgUrl});
+                    this.setState({allComments: json.commentList});
+
+
+                });
+
+
+    }
+
+
     exportAllComments = () => {
-        let allCommentstable = []
-        for (let i = 0; i < 2; i++) {
-            let comment = this.state.allComments.pop()
-            allCommentstable.push(<Comment author={comment.author} content={comment.content} date={comment.date}/>)
-        }
-        return allCommentstable;
+        let allComments = []
+        this.state.allComments.forEach(item => allComments.push(<Comment author={item.userID.name}  content={item.content} date={item.creationDate}/>))
+        return allComments;
     }
 
 
     render() {
+
         return (
+
             <div>
                 <Menu/>
                 <div id="fullPageBody">
@@ -51,22 +84,23 @@ class MovieFullPage extends React.Component {
                     <div id="content">
                         <div class="element_nieparzysty">
                             <MovieQuickDescription
-                                titlePl='Zielona mila'
-                                titleEng='The Green Mile'
-                                year='1999'
-                                duration='188'
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                imgUrl={this.state.imgUrl}
+                                titlePl={this.state.titlePl}
+                                titleEng={this.state.titleEng}
+                                year={this.state.year}
+                                duration={this.state.duration}
+                                description={this.state.description}
                             />
                         </div>
 
                         <div className="element_parzysty">
                             <MovieDetails
-                                director="Frank Darabont"
-                                sredniaOcena="3.94"
-                                gatunek="Dramat"
-                                produkcja="USA"
-                                premiera="20 marca 2000"
-                                boxoffice="286801374"
+                                director={this.state.director}
+                                sredniaOcena={this.state.sredniaOcena}
+                                gatunek={this.state.movieType}
+                                produkcja={this.state.production}
+                                premiera={this.state.premiere}
+                                boxOffice={this.state.boxOffice}
                             />
                         </div>
 

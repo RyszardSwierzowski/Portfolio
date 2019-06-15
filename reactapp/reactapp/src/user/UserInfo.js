@@ -2,6 +2,7 @@ import React from 'react';
 import './css/UserFullPage.css'
 
 
+
 class UserInfo extends React.Component {
     constructor(props) {
         super(props);
