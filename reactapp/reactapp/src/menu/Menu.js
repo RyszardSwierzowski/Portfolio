@@ -24,6 +24,14 @@ class Menu extends React.Component {
         window.location.replace(this.state.defaultUrl);
         //todo sprawdzenie czy jest zalogowany jesli tak to do domyslnej dla jego roli
     }
+    oNas= () => {
+        window.location.replace(this.state.defaultUrl+'aboutUs');
+
+    }
+    filmy= () => {
+        window.location.replace(this.state.defaultUrl+'movies/all');
+
+    }
 
 
     // ZALOGOWANY
@@ -35,10 +43,12 @@ class Menu extends React.Component {
         window.location.replace(this.state.defaultUrl+'loggedUser/'+sessionStorage.getItem('userId'));
 
     }
-    oNas= () => {
-        window.location.replace(this.state.defaultUrl+'aboutUs');
+    // ADMIN
+    adminZarzadzanie= () => {
+        window.location.replace(this.state.defaultUrl+'adminPage/'+sessionStorage.getItem('userId'));
 
     }
+
 
 
 
@@ -48,14 +58,13 @@ class Menu extends React.Component {
                 <div id="menuBar">
                     <ul>
                         <li class="home">
-                            <a href="#home"><img src={this.state.url} height="20" width="30" alt="Avatar"/></a>
+                            <Link onClick={this.zaloguj}>  <img src={this.state.url} height="20" width="30" alt="Avatar"/> </Link>
                         </li>
                         <li>
-                            <Link>Filmy</Link>
+                            <Link onClick={this.filmy}>Filmy</Link>
                         </li>
                         <li>
-                            <Link onClick={this.oNas}>O Nas</Link>
-                        </li>
+                            <Link onClick={this.oNas}>O Nas</Link>  </li>
                         <li>
                             <Link onClick={this.zaloguj}>Zaloguj się</Link>
                         </li>
@@ -74,14 +83,14 @@ class Menu extends React.Component {
                 <div id="menuBar">
                     <ul>
                         <li className="home">
-                            <a href="#home"><img src={this.state.url} height="20" width="30" alt="Avatar"/></a>
+                            <Link onClick={this.doProfilu}>  <img src={this.state.url} height="20" width="30" alt="Avatar"/> </Link>
                         </li>
                         <li>
                             <Link onClick={this.doProfilu}>Profil</Link></li>
                         <li>
-                            <a href="#contact">Filmy</a></li>
+                            <Link onClick={this.filmy}>Filmy</Link> </li>
                         <li>
-                            <a href="#about">O Nas</a></li>
+                            <Link onClick={this.oNas}>O Nas</Link>  </li>
                         <li>
                             <Link onClick={this.wyloguj}>Wyloguj się</Link></li>
                         <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
@@ -92,17 +101,38 @@ class Menu extends React.Component {
 
                 </div>
             )
-        } else if (this.state.userRole === 'recenzent') {
+        } else if (this.state.userRole === 'ROLE_ADMIN') {
             return (
                 <div id="menuBar">
-                    admin
+                    <ul>
+                        <li className="home">
+                            <Link onClick={this.doProfilu}>  <img src={this.state.url} height="20" width="30" alt="Avatar"/> </Link>
+                        </li>
+                        <li>
+                            <Link onClick={this.doProfilu}>Profil</Link></li>
+                        <li>
+                            <Link onClick={this.filmy}>Filmy</Link> </li>
+                        <li>
+                            <Link onClick={this.oNas}>O Nas</Link>  </li>
+
+
+                        <li>
+                            <Link onClick={this.adminZarzadzanie}>Zarządzanie</Link>
+                        </li>
+
+
+                        <li>
+                            <Link onClick={this.wyloguj}>Wyloguj się</Link> </li>
+                        <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
+                                                                                                  value="Szukaj"></input>
+                        </form>
+                    </ul>
+
                 </div>
             )
         } else {
             return (
-                <div id="menuBar">
-                    null
-                </div>
+<div></div>
             )
         }
 

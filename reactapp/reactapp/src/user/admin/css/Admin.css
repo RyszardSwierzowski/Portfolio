@@ -1,0 +1,70 @@
+.option{
+    display: block;
+    float: left;
+    /*background: rosybrown;*/
+    width: 50%;
+    /*height: 100%;*/
+
+
+}
+.option2{
+    display: block;
+    float: left;
+    /*background: lightslategray;*/
+    width: 50%;
+    /*height: 100%;*/
+
+}
+#glownyKontener{
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+    width: 80% ;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(218, 165, 32, 0.86);
+    font-size: 25px;
+}
+
+.itemLeft{
+    background: #111;
+    padding: 30px 0;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    height: 30px;
+    border-radius: 10px;
+}
+.itemRight{
+    padding: 30px 0;
+    background: #111;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    height: 30px;
+    border-radius: 10px;
+}
+.itemCenter{
+    width: 200%;
+    padding: 30px 0;
+    background: #111;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    height: 30px;
+    border-radius: 10px;
+}
+.itemLeft:hover{
+    background: #000;
+}
+.itemRight:hover{
+    background: #000;
+}
+.itemCenter:hover{
+    background: #000;
+}
+
+
+
+
+

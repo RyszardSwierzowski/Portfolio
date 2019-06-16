@@ -52,7 +52,11 @@ class AllMoviePage extends React.Component {
                 <div id="body">
 
                     <div id="content">
-                        {this.exportAllMovies()}
+                        <div class="floatLeft" id="size">   {this.exportAllMovies()}    </div>
+                        <div>
+                            <h1> ZROBIC FILTROWANIE</h1>
+                        </div>
+
 
                     </div>
 

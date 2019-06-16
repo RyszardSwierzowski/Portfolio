@@ -3,6 +3,7 @@ package com.swierzowski.movieapp;
 import com.swierzowski.movieapp.model.Comment;
 import com.swierzowski.movieapp.model.Movie;
 import com.swierzowski.movieapp.model.User;
+import com.swierzowski.movieapp.model.UserRole;
 import com.swierzowski.movieapp.model.movieEnums.MovieType;
 import com.swierzowski.movieapp.repository.CommentRepository;
 import com.swierzowski.movieapp.repository.MovieRepository;
@@ -38,8 +39,22 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        initDataBase();
+
+
+    }
+
+    private void initDataBase() {
         User user1 = new User();
         User user2 = new User();
+        User admin = new User();
+
+        admin.setName("admin");
+        admin.setPassword("root");
+        admin.setEmail("admin@admin.com");
+        admin.setRole(UserRole.ROLE_ADMIN);
+        userService.save(admin);
+
 
         Movie movie1 = new Movie();
         movie1.setTitlePl("Titanic");
@@ -112,8 +127,6 @@ public class Application implements CommandLineRunner {
         comment2.setUserID(user2);
         comment2.setContent("taki tam komentarz 2");
         commentService.addComment(3,comment2);
-
-
     }
 }
 

@@ -3,9 +3,6 @@ import '../css/MainCss.css'
 import './css/AllMoviesElement.css'
 import {Link} from "react-router-dom";
 
-import Stopka from '../stopka/Stopka'
-import Menu from '../menu/Menu'
-
 
 class AllMovieElement extends React.Component {
     constructor(props) {
@@ -21,11 +18,21 @@ class AllMovieElement extends React.Component {
     }
 
     render() {
+        if (this.props.movie === null) {
+            return (
+                <div class="element_Renderowany">
+                    <h2>Brak filmów spełniających kryteria</h2>
+
+                </div>
+
+
+            );
+        }
         return (<div class="element_Renderowany">
 
                 <Link
                     class="noneDecorationLink"
-                      onClick={this.test}>
+                    onClick={this.test}>
                     <div class="floatLeft"><img src={this.props.imgUrl} alt="plakat filmu" height="92" width="70"/>
 
                     </div>

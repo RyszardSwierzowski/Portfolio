@@ -7,6 +7,7 @@ import UserFullPage from './user/UserFullPage'
 import Logowanie from './logowanieRejestracja/Logowanie'
 import AboutUs from './aboutUs/AboutUs'
 import AllMoviesPage from './movie/AllMoviesPage'
+import FullAdminPage from './user/admin/FullAdminPage'
 
 
 
@@ -28,6 +29,7 @@ class App extends React.Component {
 
                         <Route exact path='/' component={Logowanie}/>
                         <Route exact path='/loggedUser/:nick' component={UserFullPage}/>
+                        <Route exact path='/adminPage/:nick' component={FullAdminPage}/>
                         <Route exact path='/movie/:movieId' component={MovieFullPage}/>
                         <Route exact path='/movies/all' component={AllMoviesPage}/>
                         <Route exact path='/aboutUs' component={AboutUs}/>
