@@ -55,6 +55,12 @@ body {
     border-radius: 10px;
 
 }
+.floatLeft{
+    float: left;
+}
+.noneDecorationLink{
+    text-decoration: none;
+}
 
 /*.element_Renderowany {*/
 /*    display: block;*/

@@ -1,0 +1,26 @@
+#titleAME  {
+    /*display: inline-block;*/
+    padding-left: 30px;
+    /*color:goldenrod;*/
+    color: goldenrod;
+    width: 70%;
+    font-size: 25px;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+
+}
+#descriptionAME{
+    /*display: inline-block;*/
+    padding-left: 50px;
+    color:black;
+    text-decoration: none;
+    /*background: #45a340;*/
+
+
+}
+#titleDescriptionBlock{
+    display: block;
+    padding-left: 10%;
+}
