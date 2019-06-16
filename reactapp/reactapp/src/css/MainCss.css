@@ -60,6 +60,7 @@ body {
 }
 .noneDecorationLink{
     text-decoration: none;
+    color: rgba(218, 165, 32, 0.86);
 }
 
 /*.element_Renderowany {*/

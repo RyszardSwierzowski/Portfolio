@@ -13,7 +13,7 @@ class AllMovieElement extends React.Component {
     }
 
     test = () => {
-        window.location.replace('../movie/1');
+        window.location.replace('../movie/'+this.props.id);
 
     }
 

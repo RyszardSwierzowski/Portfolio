@@ -50,7 +50,7 @@ public class MovieController {
                 .body(resulMovie);
 
     }
-
+    @CrossOrigin
     @PostMapping("")
     ResponseEntity<Movie> addNewMovie(@RequestBody Movie movie){
         movieService.save(movie);

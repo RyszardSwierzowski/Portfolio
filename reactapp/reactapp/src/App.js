@@ -8,11 +8,10 @@ import Logowanie from './logowanieRejestracja/Logowanie'
 import AboutUs from './aboutUs/AboutUs'
 import AllMoviesPage from './movie/AllMoviesPage'
 import FullAdminPage from './user/admin/FullAdminPage'
+import AddNewMovie from './user/admin/AddNewMovie'
 
 
-
-
-export let apiHostUrl ='http://localhost:8080'
+export let apiHostUrl = 'http://localhost:8080'
 
 class App extends React.Component {
     // constructor(props) {
@@ -27,14 +26,16 @@ class App extends React.Component {
             <Router>
                 <Switch>
 
-                        <Route exact path='/' component={Logowanie}/>
-                        <Route exact path='/loggedUser/:nick' component={UserFullPage}/>
-                        <Route exact path='/adminPage/:nick' component={FullAdminPage}/>
-                        <Route exact path='/movie/:movieId' component={MovieFullPage}/>
-                        <Route exact path='/movies/all' component={AllMoviesPage}/>
-                        <Route exact path='/aboutUs' component={AboutUs}/>
+                    <Route exact path='/' component={Logowanie}/>
+                    <Route exact path='/loggedUser/:nick' component={UserFullPage}/>
+                    <Route exact path='/adminPage/:nick/addMovie' component={AddNewMovie}/>
+                    <Route exact path='/adminPage/:nick' component={FullAdminPage}/>
 
-                        {/*<Route component={NotFound} /> */}
+                    <Route exact path='/movie/:movieId' component={MovieFullPage}/>
+                    <Route exact path='/movies/all' component={AllMoviesPage}/>
+                    <Route exact path='/aboutUs' component={AboutUs}/>
+
+                    {/*<Route component={NotFound} /> */}
 
                 </Switch>
                 {/*<div>*/}

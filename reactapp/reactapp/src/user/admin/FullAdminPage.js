@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/MainCss.css'
-import Options from './userOptions/Options'
+import Options from './options/Options'
 
 
 
@@ -27,12 +27,9 @@ class FullAdminPage extends React.Component {
     }
 
 
-    // exportAllFavorites = () => {
-    //     let allFavorites = []
-    //     this.state.favorites.forEach(item => allFavorites.push(<UserFavorites id={item}/>))
-    //
-    //     return allFavorites;
-    // }
+
+
+
 
     render() {
 

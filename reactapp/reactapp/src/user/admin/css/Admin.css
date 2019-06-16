@@ -64,6 +64,24 @@
     background: #000;
 }
 
+.labelSize{
+    display: block;
+    float: left;
+    width: 130px;
+}
+.inputSize{
+    margin: 5px;
+    width: 500px;
+}
+
+#addNewMovieSize{
+    min-height: 510px;
+    padding: auto;
+    width: 680px;
+    margin: auto;
+    padding: auto;
+}
+
 
 
 

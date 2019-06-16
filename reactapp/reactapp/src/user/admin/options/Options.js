@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../css/MainCss.css'
 import '../css/Admin.css'
+import {Link} from "react-router-dom";
 
 
 class Options extends React.Component {
@@ -11,6 +12,10 @@ class Options extends React.Component {
         this.state = {};
     }
 
+    adminZarzadzanie= () => {
+        window.location.replace('/adminPage/'+sessionStorage.getItem('userId')+'/addMovie');
+
+    }
 
     render() {
 
@@ -20,7 +25,8 @@ class Options extends React.Component {
                         <h1>Wybierz czym chcesz zarządać </h1>
                         <div>
                             <div className="option">
-                                <div className="itemLeft">Dodaj nowy film</div>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie} >  <div class="itemLeft">Dodaj nowy film</div> </Link>
+
                                 <div className="itemLeft">Dodaj recenzje</div>
                                 <div className="itemCenter">Użytkownicy</div>
                             </div>
