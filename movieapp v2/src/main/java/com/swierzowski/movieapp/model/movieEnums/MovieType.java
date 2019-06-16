@@ -6,5 +6,6 @@ public enum MovieType {
     KOMEDIA,
     HORROR,
     WOJENNY,
-    THRILLER
+    THRILLER,
+    KATASTROFICZNY
 }

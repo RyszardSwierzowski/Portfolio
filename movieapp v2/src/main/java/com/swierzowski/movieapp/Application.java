@@ -43,13 +43,30 @@ public class Application implements CommandLineRunner {
 
         Movie movie1 = new Movie();
         movie1.setTitlePl("Titanic");
-        movie1.setDescription("Tonąca łajba");
-        movie1.setDirector("Nagrywajacy patykiem");
+        movie1.setTitleEng("Titanic");
+        movie1.setDescription("Rok 1912, brytyjski statek Titanic wyrusza w swój dziewiczy rejs do USA. Na pokładzie emigrant Jack przypadkowo spotyka arystokratkę Rose. ");
+        movie1.setDirector("James Cameron");
+        movie1.setImgUrl("https://images-na.ssl-images-amazon.com/images/I/51G13d3EwBL.jpg");
+        movie1.setPremiere("01 listopad 1997");
+        movie1.setTrailerUrl("https://www.youtube.com/embed/ezcvpLIyifU");
+        movie1.setBoxOffice("$ 2 187 463 944");
+        movie1.setProduction("USA");
+        movie1.setMovieType(MovieType.KATASTROFICZNY);
+        movie1.setDuration("3 godz. 14 min");
+
 
         Movie movie2 = new Movie();
         movie2.setTitlePl("King Kong");
-        movie2.setDescription("Małpa na sterydach");
-        movie2.setDirector("Antoni");
+        movie2.setDescription("Lata 30. XX wieku. Bankrutujący reżyser i głodująca aktorka wyruszają na tajemniczą Wyspę Czaszki, by nagrać film swojego życia, ponieważ w Nowym Jorku panuje wielki kryzys. ");
+        movie2.setDirector("Peter Jackson");
+        movie2.setImgUrl("http://www.impawards.com/2005/posters/king_kong_ver5.jpg");
+        movie2.setPremiere("5 grudnia 2005");
+        movie2.setTrailerUrl("https://www.youtube.com/embed/AYaTCPbYGdk");
+        movie2.setBoxOffice("$ 550 517 357");
+        movie2.setProduction("Niemcy");
+        movie2.setMovieType(MovieType.FANTAZY);
+        movie2.setDuration("3 godz. 7 min");
+
 
         Movie movie3 = new Movie();
         movie3.setTitlePl("Zielona mila");

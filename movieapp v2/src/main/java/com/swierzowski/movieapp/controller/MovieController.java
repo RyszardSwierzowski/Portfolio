@@ -23,13 +23,13 @@ public class MovieController {
     @Autowired
     MovieService movieService;
 
-
-    @GetMapping("")
+    @CrossOrigin
+    @GetMapping("all")
     ResponseEntity<List<Movie>> getAllMovies(){
         return ResponseEntity.ok()
                 .body(movieRepository.findAll());
     }
-
+    @CrossOrigin
     @GetMapping("/{id}")
     ResponseEntity<Movie> getMovie(@PathVariable("id") Long id){
         Optional<Movie> optionalMovie = movieRepository.findById(id);
