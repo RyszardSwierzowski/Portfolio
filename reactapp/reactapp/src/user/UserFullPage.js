@@ -3,29 +3,9 @@ import '../css/MainCss.css'
 import './css/UserFullPage.css'
 import './css/Favorites.css'
 import UserInfo from './UserInfo'
-import UserFavorites from './Favorites'
 import Stopka from '../stopka/Stopka'
 import Menu from '../menu/Menu'
-import axios from 'axios'
-import Comment from "../comment/Comment";
-import {delay} from "q";
-import {apiHostUrl} from '../App'
 import FavoriteElement from './FavoriteElement'
-import {Link} from "react-router-dom";
-
-
-
-// export function changeVisable() {
-//     if (visable === true)
-//         visable=false
-//     else
-//         visable=true
-//
-//     alert(visable)
-// // window.location.reload()
-// }
-// let visable=true;
-
 
 
 class UserFullPage extends React.Component {
@@ -124,19 +104,28 @@ class UserFullPage extends React.Component {
 
 
 
-    // changeVisable = () => {
-    //     if (this.state.visableSetting === true)
-    //         this.setState({visableSetting: false})
-    //     else
-    //         this.setState({visableSetting: this})
-    // }
-
     hideDiv = () => {
         if (localStorage.getItem('visable') == 1) {
             // alert(localStorage.getItem('visable'))
             return (
 
-                    <div className="element_Renderowany">xxx</div>
+                    <div className="element_Renderowany">
+                    <div id="centerSettings">
+                        <div className="floatLeft settingsSize" >
+                            <h5>Zmień hasło</h5>
+                        </div>
+
+                        <div className="floatLeft settingsSize" >
+                            <h5>Zmień adres email</h5>
+                        </div>
+
+                        <div className="floatLeft settingsSize"
+                        >
+                            <h5>Wybierz nowy avatar</h5>
+                        </div>
+                        <div className="clearBoth"></div>
+                    </div>
+                    </div>
 
             )
         }

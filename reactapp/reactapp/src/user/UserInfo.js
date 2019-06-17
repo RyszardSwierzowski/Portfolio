@@ -21,7 +21,7 @@ class UserInfo extends React.Component {
             localStorage.setItem('visable',0)
         else
             localStorage.setItem('visable',1)
-        
+
 
 
     }
