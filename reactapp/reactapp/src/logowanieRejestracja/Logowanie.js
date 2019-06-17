@@ -51,6 +51,7 @@ class Logowanie extends React.Component {
             sessionStorage.setItem('user', odpowiedz.data.name)
             sessionStorage.setItem('role', odpowiedz.data.role)
             sessionStorage.setItem('token', 'token')
+            localStorage.setItem('visable',0);
             window.location.replace('/loggedUser/'+sessionStorage.getItem('userId'))
         }
     }

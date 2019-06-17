@@ -1,15 +1,30 @@
 import React from 'react';
 import './css/UserFullPage.css'
-
+import {Link} from "react-router-dom";
+// import {changeVisable} from "./UserFullPage";
+import image from '../img/settings-work-tool.png'
 
 
 class UserInfo extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            visableSetting:true
+        };
     }
+    changeVisable=()=>{
+        let visable = localStorage.getItem('visable')
+        localStorage.clear()
+        // alert(visable)
+        if(visable==1)
+            localStorage.setItem('visable',0)
+        else
+            localStorage.setItem('visable',1)
+        
 
+
+    }
 
     render() {
         return (
@@ -24,6 +39,12 @@ class UserInfo extends React.Component {
                     <p>login : {this.props.userName}</p>
                     <p>email : {this.props.email}</p>
                     <p></p>
+                </div>
+
+                <div>
+                    <Link onClick={this.changeVisable}>
+                        <img src={image} alt="plakat filmu" height="50" width="50"/>
+                    </Link>
                 </div>
 
 

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc998f9-2627-4cf5-a36d-9dbfe65dc383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/MainCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/MainCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/css/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/css/Menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/MovieFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/MovieFullPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/MovieQuickDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/MovieQuickDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/Polubienia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/Polubienia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/movie/css/AllMoviesElement.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/movie/css/AllMoviesElement.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stopka/css/Stopka.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stopka/css/Stopka.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Favorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserFullPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserInfo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,50 +19,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
+        <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="91" column="44" lean-forward="true" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+            <state relative-caret-position="425">
+              <caret line="136" column="20" lean-forward="true" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1936#2435#0" />
-                <element signature="e#3718#3865#0" />
-                <element signature="e#3891#3999#0" />
-                <element signature="e#4025#4187#0" />
-                <element signature="e#4213#4412#0" />
+                <element signature="e#1190#1335#0" />
+                <element signature="e#1548#1691#0" />
+                <element signature="e#1864#1988#0" />
+                <element signature="e#2086#2173#0" />
+                <element signature="e#2253#2698#0" />
+                <element signature="e#2304#2683#0" />
+                <element signature="e#2341#2665#0" />
+                <element signature="e#2412#2467#0" />
+                <element signature="e#2853#3512#0" />
+                <element signature="e#2928#3034#0" />
+                <element signature="e#3099#3475#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/movie/css/AllMoviesElement.css">
+        <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="340">
+              <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#Logowanie#0" />
+                <element signature="e#429#670#0" />
+                <element signature="e#1690#3390#0" />
+                <element signature="e#1806#3383#0" />
+                <element signature="e#1893#2063#0" />
+                <element signature="e#2157#2672#0" />
+                <element signature="e#2678#3373#0" />
+                <element signature="e#2810#2949#0" />
+                <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
+        <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#826#2741#0" />
-                <element signature="e#2780#3402#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/movie/AllMoviesPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="391">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -82,54 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
               <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu/Menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stopka/css/Stopka.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/movie/AllMovieElement.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="70" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/FavoriteElement.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -182,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/logowanieRejestracja/css/Logowanie.css" />
         <option value="$PROJECT_DIR$/src/movie/css/Favorites.css" />
         <option value="$PROJECT_DIR$/src/user/css/Favorites.css" />
-        <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
         <option value="$PROJECT_DIR$/src/movie/MovieTrailer.js" />
         <option value="$PROJECT_DIR$/src/comment/Comment.js" />
         <option value="$PROJECT_DIR$/src/comment/css/comment.css" />
@@ -200,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/user/admin/css/Admin.css" />
         <option value="$PROJECT_DIR$/src/user/admin/AddNewMovie.js" />
         <option value="$PROJECT_DIR$/src/user/admin/options/Options.js" />
-        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/movie/Polubienia.css" />
         <option value="$PROJECT_DIR$/src/movie/css/movieFullPage.css" />
         <option value="$PROJECT_DIR$/src/movie/css/MovieQD.css" />
@@ -214,7 +161,9 @@
         <option value="$PROJECT_DIR$/src/stopka/css/Stopka.css" />
         <option value="$PROJECT_DIR$/src/menu/css/Menu.css" />
         <option value="$PROJECT_DIR$/src/css/MainCss.css" />
+        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/user/UserFullPage.js" />
+        <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
       </list>
     </option>
   </component>
@@ -231,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +197,12 @@
               <item name="reactapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="logowanieRejestracja" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactapp" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +246,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,11 +308,12 @@
       <workItem from="1560586874880" duration="21958000" />
       <workItem from="1560671257166" duration="24570000" />
       <workItem from="1560779744653" duration="16450000" />
+      <workItem from="1560798777854" duration="3301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149219000" />
+    <option name="totallyTimeSpent" value="152520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,16 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/admin/movieOptions/MovieOptions.js" />
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,31 +553,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/Polubienia.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/Polubienia.css" />
     <entry file="file://$PROJECT_DIR$/src/movie/css/movieFullPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#Logowanie#0" />
-            <element signature="e#429#670#0" />
-            <element signature="e#1690#3390#0" />
-            <element signature="e#1806#3383#0" />
-            <element signature="e#1893#2063#0" />
-            <element signature="e#2157#2672#0" />
-            <element signature="e#2678#3373#0" />
-            <element signature="e#2810#2949#0" />
-            <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,45 +581,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/Polubienia.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/MovieQuickDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="91" column="44" lean-forward="true" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1936#2435#0" />
-            <element signature="e#3718#3865#0" />
-            <element signature="e#3891#3999#0" />
-            <element signature="e#4025#4187#0" />
-            <element signature="e#4213#4412#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/Favorites.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/Menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stopka/css/Stopka.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/css/AllMoviesElement.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/AllMoviesPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -710,48 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/AllMoviesPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user/FavoriteElement.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/movie/css/AllMoviesElement.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/Menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stopka/css/Stopka.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu/css/Menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -762,14 +653,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
+    <entry file="file://$PROJECT_DIR$/src/movie/MovieFullPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
+        <state relative-caret-position="340">
+          <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#826#2741#0" />
-            <element signature="e#2780#3402#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/MovieQuickDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/movie/Polubienia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="136" column="20" lean-forward="true" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1190#1335#0" />
+            <element signature="e#1548#1691#0" />
+            <element signature="e#1864#1988#0" />
+            <element signature="e#2086#2173#0" />
+            <element signature="e#2253#2698#0" />
+            <element signature="e#2304#2683#0" />
+            <element signature="e#2341#2665#0" />
+            <element signature="e#2412#2467#0" />
+            <element signature="e#2853#3512#0" />
+            <element signature="e#2928#3034#0" />
+            <element signature="e#3099#3475#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#Logowanie#0" />
+            <element signature="e#429#670#0" />
+            <element signature="e#1690#3390#0" />
+            <element signature="e#1806#3383#0" />
+            <element signature="e#1893#2063#0" />
+            <element signature="e#2157#2672#0" />
+            <element signature="e#2678#3373#0" />
+            <element signature="e#2810#2949#0" />
+            <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

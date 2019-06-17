@@ -14,13 +14,27 @@ import FavoriteElement from './FavoriteElement'
 import {Link} from "react-router-dom";
 
 
+
+// export function changeVisable() {
+//     if (visable === true)
+//         visable=false
+//     else
+//         visable=true
+//
+//     alert(visable)
+// // window.location.reload()
+// }
+// let visable=true;
+
+
+
 class UserFullPage extends React.Component {
     constructor(props) {
         super(props);
 
 
         this.state = {
-            visableSetting:true,
+
 
             userName: '',
             email: '',
@@ -32,12 +46,14 @@ class UserFullPage extends React.Component {
         };
     }
 
-    componentDidMount =  async () => {
+
+    componentDidMount = async () => {
         if (!sessionStorage.getItem('userId'))
             window.location.replace('/')
         else {
+
             const f = await
-                fetch("http://localhost:8080/api/user/"+this.props.match.params.nick)
+                fetch("http://localhost:8080/api/user/" + this.props.match.params.nick)
                     .then(res => res.json())
                     .then(json => {
                         this.setState({userName: json.name});
@@ -69,9 +85,9 @@ class UserFullPage extends React.Component {
             }
 
             let allFavorites = []
-            this.state.favorites.forEach(f=>{
-                this.state.allMovies.forEach(m =>{
-                    if(f === m.id ){
+            this.state.favorites.forEach(f => {
+                this.state.allMovies.forEach(m => {
+                    if (f === m.id) {
                         allFavorites.push(m)
                         // allFavorites.push(<FavoriteElement imgUrl={m.imgUrl}
                         //                                    title={m.title}
@@ -80,46 +96,48 @@ class UserFullPage extends React.Component {
                     }
                 })
             })
-            this.setState({favorites:allFavorites})
+            this.setState({favorites: allFavorites})
             console.log(this.state.favorites)
 
 
-
-
-
         }
+
+
 
     }
 
 
     exportAllFavorites = () => {
         let allFavorites = []
-        if(this.state.favorites.length===0){
+        if (this.state.favorites.length === 0) {
             allFavorites.push(<FavoriteElement none='yes'/>)
 
             return allFavorites;
         }
 
         this.state.favorites.forEach(item => allFavorites.push(<FavoriteElement title={item.titlePl}
-                                                                                          imgUrl={item.imgUrl}
-                                                                                          id={item.id}
-                                                                                          description={item.description}  />))
+                                                                                imgUrl={item.imgUrl}
+                                                                                id={item.id}
+                                                                                description={item.description}/>))
         return allFavorites;
     }
 
 
-    changeVisable =()=> {
-        if(this.state.visableSetting === true)
-            this.setState({visableSetting:false})
-        else
-            this.setState({visableSetting:this})
-    }
 
-    hideDiv =()=> {
-        if(this.state.visableSetting===true){
-            return(
-                <Link onClick={this.changeVisable}><div className="element_Renderowany" >xxx</div></Link>
-                
+    // changeVisable = () => {
+    //     if (this.state.visableSetting === true)
+    //         this.setState({visableSetting: false})
+    //     else
+    //         this.setState({visableSetting: this})
+    // }
+
+    hideDiv = () => {
+        if (localStorage.getItem('visable') == 1) {
+            // alert(localStorage.getItem('visable'))
+            return (
+
+                    <div className="element_Renderowany">xxx</div>
+
             )
         }
     }
@@ -139,14 +157,12 @@ class UserFullPage extends React.Component {
                                     avatarUrl={this.state.avatarUrl}
                                 />
                             </div>
+                            {this.hideDiv()}
                             <div className="element_Renderowany">
                                 <h2>Twoje ulubione filmy</h2>
                                 {this.exportAllFavorites()}
 
                             </div>
-
-                            {this.hideDiv()}
-
 
 
                             <Stopka/>
