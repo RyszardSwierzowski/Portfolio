@@ -33,8 +33,8 @@ class MovieFullPage extends React.Component {
             fetch("http://localhost:8080/api/movie/" + this.props.match.params.movieId)
                 .then(res => res.json())
                 .then(json => {
-                    console.log(json.commentList)
-                    console.log(json)
+                    // console.log(json.commentList)
+                    // console.log(json)
 
                     this.setState({titlePl: json.titlePl});
                     this.setState({id: json.id});

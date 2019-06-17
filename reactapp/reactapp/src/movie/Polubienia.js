@@ -27,15 +27,23 @@ class Polubienia extends React.Component {
                     myFavorites = json;
 
                     myFavorites.forEach(item => {
-                        console.log('item:' + item + " props" + this.props.movieId)
+                        // console.log('item:' + item + " props" + this.props.movieId)
                         if (item === this.props.movieId) {
                             this.setState({isFavorite: true})
                         }
                     })
-                    console.log(this.state.isFavorite)
+                    // console.log(this.state.isFavorite)
 
 
                 });
+        const f = await fetch('http://localhost:8080/api/movie/howManyLike/'+this.props.movieId)
+            .then(res=>res.json())
+            .then(json=>{
+               this.setState({numberOfLike:json});
+                // console.log(this.state.numberOfLike)
+            });
+
+
     }
 
 
@@ -52,7 +60,7 @@ class Polubienia extends React.Component {
         if (this.state.isFavorite === false) {
             return (
                 <div>
-                    <div>polubień</div>
+                    <div>{this.state.numberOfLike} polubień</div>
                     <Link onClick={this.likeOrUnlike}>
 
                         <div id="unlikeStar">
@@ -65,6 +73,7 @@ class Polubienia extends React.Component {
         }
         return (
             <div>
+                <div>{this.state.numberOfLike} polubień</div>
                 <Link onClick={this.likeOrUnlike}>
                     <div id="likeStar">
                         <img src={image2} alt="like" height="42" width="42"/>

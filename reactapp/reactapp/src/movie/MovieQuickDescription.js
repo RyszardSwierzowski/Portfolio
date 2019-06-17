@@ -21,7 +21,7 @@ class MovieQuickDescription extends React.Component {
                 <div id="poster"><img src={this.props.imgUrl} alt="plakat filmu" height="197" width="150"/></div>
                 <div id='title'>
 
-                    <div>{this.props.titlePl} <span id="year">({this.props.year})</span>
+                    <div>{this.props.titlePl}
 
 
                     </div>

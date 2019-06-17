@@ -10,6 +10,8 @@ import axios from 'axios'
 import Comment from "../comment/Comment";
 import {delay} from "q";
 import {apiHostUrl} from '../App'
+import FavoriteElement from './FavoriteElement'
+import {Link} from "react-router-dom";
 
 
 class UserFullPage extends React.Component {
@@ -18,6 +20,8 @@ class UserFullPage extends React.Component {
 
 
         this.state = {
+            visableSetting:true,
+
             userName: '',
             email: '',
             avatarUrl: '',
@@ -51,10 +55,37 @@ class UserFullPage extends React.Component {
 
                     });
 
-            console.log(this.state.favorites)
+            const f3 = await
+                fetch("http://localhost:8080/api/movie/all")
+                    .then(res => res.json())
+                    .then(json => {
+                        this.setState({allMovies: json});
+                        console.log(json);
+                    });
+
+            // console.log(this.state.favorites)
             if (this.state.avatarUrl === '') {
                 this.setState({avatarUrl: this.state.defaultAvatarUrl})
             }
+
+            let allFavorites = []
+            this.state.favorites.forEach(f=>{
+                this.state.allMovies.forEach(m =>{
+                    if(f === m.id ){
+                        allFavorites.push(m)
+                        // allFavorites.push(<FavoriteElement imgUrl={m.imgUrl}
+                        //                                    title={m.title}
+                        //                                    description={m.description}     />
+
+                    }
+                })
+            })
+            this.setState({favorites:allFavorites})
+            console.log(this.state.favorites)
+
+
+
+
 
         }
 
@@ -63,9 +94,34 @@ class UserFullPage extends React.Component {
 
     exportAllFavorites = () => {
         let allFavorites = []
-        this.state.favorites.forEach(item => allFavorites.push(<UserFavorites id={item}/>))
+        if(this.state.favorites.length===0){
+            allFavorites.push(<FavoriteElement none='yes'/>)
 
+            return allFavorites;
+        }
+
+        this.state.favorites.forEach(item => allFavorites.push(<FavoriteElement title={item.titlePl}
+                                                                                          imgUrl={item.imgUrl}
+                                                                                          id={item.id}
+                                                                                          description={item.description}  />))
         return allFavorites;
+    }
+
+
+    changeVisable =()=> {
+        if(this.state.visableSetting === true)
+            this.setState({visableSetting:false})
+        else
+            this.setState({visableSetting:this})
+    }
+
+    hideDiv =()=> {
+        if(this.state.visableSetting===true){
+            return(
+                <Link onClick={this.changeVisable}><div className="element_Renderowany" >xxx</div></Link>
+                
+            )
+        }
     }
 
     render() {
@@ -88,6 +144,11 @@ class UserFullPage extends React.Component {
                                 {this.exportAllFavorites()}
 
                             </div>
+
+                            {this.hideDiv()}
+
+
+
                             <Stopka/>
 
 

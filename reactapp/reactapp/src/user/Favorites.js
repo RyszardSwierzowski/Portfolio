@@ -18,7 +18,6 @@ class Favorites extends React.Component{
             <div >
                 <div id="favoriteMovie">
                     {this.props.id}
-
                 </div>
 
 
