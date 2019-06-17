@@ -121,7 +121,7 @@ function checkValidServiceWorker(swUrl, config) {
     })
     .catch(() => {
       console.log(
-        'No internet connection found. MovieQuickDescription is running in offline mode.'
+        'No internet connection found. Polubienia is running in offline mode.'
       );
     });
 }

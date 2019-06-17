@@ -27,12 +27,14 @@ class Options extends React.Component {
                             <div className="option">
                                 <Link class="noneDecorationLink" onClick={this.adminZarzadzanie} >  <div class="itemLeft">Dodaj nowy film</div> </Link>
 
+
                                 <div className="itemLeft">Dodaj recenzje</div>
                                 <div className="itemCenter">Użytkownicy</div>
                             </div>
 
                             <div className="option2">
-                                <div className="itemRight">Edytuj film</div>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie} >  <div className="itemRight">Edytuj film</div> </Link>
+
                                 <div className="itemRight">Edytuj recenzje</div>
                             </div>
                         </div>

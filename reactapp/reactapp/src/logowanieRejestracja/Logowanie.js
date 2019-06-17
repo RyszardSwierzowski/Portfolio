@@ -110,25 +110,16 @@ class Logowanie extends React.Component {
     }
 
 
-    // componentDidMount() {
-    //     const f= fetch("http://localhost:8080/api/user/1")
-    //        .then(res => res.json())
-    //        .then(json => {
-    //            this.setState({data:json});
-    //            console.log(this.state.data);
-    //            this.setState({userId:json.id});
-    //            console.log(this.state.userId);
-    //            this.setState({email:json.email});
-    //            console.log(this.state.email);
-    //
-    //
-    //        });
-    //
-    //
-    // }
+
 
 
     render() {
+        if(sessionStorage.getItem('userId')){
+            window.location.replace('http://localhost:3000/loggedUser/2')
+            return <div></div>
+
+        }
+
         return (
             <div id="bodyLogowania">
                 <Menu/>

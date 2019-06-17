@@ -68,9 +68,11 @@ class AddNewMovie extends React.Component {
             "movieType": this.state.movieType,
             "production": this.state.production,
             "duration": this.state.duration,
-            "trailerUrl": this.state.trailerUrl,
+            "trailerUrl": 'https://www.youtube.com/embed/'+this.state.trailerUrl,
             "imgUrl": this.state.imgUrl
         });
+        alert('dodano nowy film')
+        window.location.reload();
 
     }
 
@@ -83,7 +85,12 @@ class AddNewMovie extends React.Component {
                     <div id="body">
 
                         <div id="content">
+
+
                             <div class="element_Renderowany" id="addNewMovieSize">
+
+                                <h2>Dodaj nowy film do bazy</h2>
+
                             <form   onSubmit={this.dodajFilm}>
                                 <label class="labelSize" >Polski tytuł : </label>     <input class="inputSize" type="text"  name="titlePl" placeholder="polski tytuł" onChange={this.bindowanieFormularza} required="true" />    <br/>
                                 <label class="labelSize" >Oryginalny tytuł : </label>     <input class="inputSize"  type="text"  name="titleEng" placeholder="oryginalny tytuł" onChange={this.bindowanieFormularza}required="true" />    <br/>
@@ -105,11 +112,11 @@ class AddNewMovie extends React.Component {
 
                                 <label class="labelSize" >Produkcja : </label>      <input class="inputSize"  type="text"  name="production" placeholder="produkcja" onChange={this.bindowanieFormularza}required="true" />    <br/>
                                 <label class="labelSize" >Czas trwania : </label>      <input  class="inputSize" type="text"  name="duration" placeholder="czas trwania (np. 3godz. 45 min)" onChange={this.bindowanieFormularza}required="true" />    <br/>
-                                <label class="labelSize" >URL zwiastuna : </label>      <input class="inputSize"  type="text"  name="trailerUrl" placeholder="URL do zwiastuna na youtube" onChange={this.bindowanieFormularza}required="true" />    <br/>
+                                <label class="labelSize" >URL zwiastuna : </label>      <input class="inputSize"  type="text"  name="trailerUrl" placeholder="ID zwiastuna na youtube" onChange={this.bindowanieFormularza}required="true" />    <br/>
                                 <label class="labelSize" >URL grafiki : </label>      <input  class="inputSize" type="text"  name="imgUrl" placeholder="URL grafiki" onChange={this.bindowanieFormularza}required="true" />    <br/>
 
 
-                                <input type="submit"/>
+                                <input id="buttonConfirm"type="submit"/>
                             </form>
                             </div>
 

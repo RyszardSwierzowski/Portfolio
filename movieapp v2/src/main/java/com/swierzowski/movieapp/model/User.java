@@ -32,6 +32,7 @@ public class User {
     @OneToMany
     Set<Movie> favoritesList;
 
+
     public User() {
         this.role = UserRole.ROLE_NORMAL;
     }

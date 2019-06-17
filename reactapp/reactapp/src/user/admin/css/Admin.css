@@ -67,7 +67,7 @@
 .labelSize{
     display: block;
     float: left;
-    width: 130px;
+    width: 150px;
 }
 .inputSize{
     margin: 5px;
@@ -75,13 +75,28 @@
 }
 
 #addNewMovieSize{
-    min-height: 510px;
+    min-height: 600px;
     padding: auto;
     width: 680px;
     margin: auto;
     padding: auto;
 }
 
+label{
+    font-size: 19px;
+}
+#buttonConfirm{
+    width: 300px;
+    margin-left: 260px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+textarea{
+    border-radius: 25px;
+    text-align: center;
+    height: 50px;
+}
 
 
 

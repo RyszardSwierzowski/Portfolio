@@ -35,6 +35,7 @@ body {
 }
 
 #content {
+    color:goldenrod;
 
     background: gray;
     width: 75%;
@@ -58,10 +59,17 @@ body {
 .floatLeft{
     float: left;
 }
+.clearBoth{
+    clear: both;
+}
 .noneDecorationLink{
     text-decoration: none;
     color: rgba(218, 165, 32, 0.86);
 }
+h2{
+    text-align: center;
+}
+
 
 /*.element_Renderowany {*/
 /*    display: block;*/

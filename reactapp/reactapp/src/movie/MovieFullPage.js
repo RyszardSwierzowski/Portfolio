@@ -9,8 +9,7 @@ import Menu from '../menu/Menu'
 import Comment from '../comment/Comment'
 import AddNewComment from '../comment/AddNewComment'
 import '../css/MainCss.css'
-import UserFavorites from "../user/Favorites";
-import {delay} from "q";
+import Polubienia from './Polubienia'
 
 
 class MovieFullPage extends React.Component {
@@ -38,6 +37,7 @@ class MovieFullPage extends React.Component {
                     console.log(json)
 
                     this.setState({titlePl: json.titlePl});
+                    this.setState({id: json.id});
                     this.setState({titleEng: json.titleEng});
                     this.setState({duration: json.duration});
                     this.setState({description: json.description});
@@ -82,26 +82,43 @@ class MovieFullPage extends React.Component {
 
                     <div id="content">
                         <div class="element_Renderowany">
-                            <MovieQuickDescription
-                                imgUrl={this.state.imgUrl}
-                                titlePl={this.state.titlePl}
-                                titleEng={this.state.titleEng}
-                                year={this.state.year}
-                                duration={this.state.duration}
-                                description={this.state.description}
-                            />
+
+                            <div id="lewy">
+                                <Polubienia movieId={this.state.id}/>
+                            </div>
+
+
+                            <div id="prawy">
+                                <MovieQuickDescription
+                                    imgUrl={this.state.imgUrl}
+                                    titlePl={this.state.titlePl}
+                                    titleEng={this.state.titleEng}
+                                    year={this.state.year}
+                                    duration={this.state.duration}
+                                    description={this.state.description}
+                                />
+                            </div>
+                            <div class="clearBoth"></div>
+
+
+
                         </div>
 
+
+
+
                         <div className="element_Renderowany">
+                            <span>Szczegóły</span>
                             <MovieDetails
                                 director={this.state.director}
-                                sredniaOcena={this.state.sredniaOcena}
+                                // sredniaOcena={this.state.sredniaOcena}
                                 gatunek={this.state.movieType}
                                 produkcja={this.state.production}
                                 premiera={this.state.premiere}
                                 boxOffice={this.state.boxOffice}
                             />
                         </div>
+
 
                         <div className="element_Renderowany">
                             <MovieTrailer trailerUrl={this.state.trailerUrl}/>

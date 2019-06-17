@@ -1,10 +1,13 @@
 
 #mainDiv {
     margin: auto;
-    padding: 25px;
-    width: 95%;
+    padding: 15px;
+    width: 85%;
     text-align: left;
     min-height: 197px;
+    /*background: red;*/
+    margin-left: 25px;
+    background: rgba(255, 255, 0, 0.29);
 
 
 }
@@ -20,7 +23,7 @@
     float: left;
     background: silver;
 
-    /*background-image: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");*/
+    /*background-image1: url("https://ssl-gfx.filmweb.pl/po/08/62/862/7517878.3.jpg");*/
 
 }
 
@@ -51,4 +54,48 @@
     padding: 10px;
     font-size: 15px;
     line-height: normal;
+}
+
+#prawy{
+/*background: blue;*/
+    width: 80%;
+    /*height: 150px;*/
+
+
+}
+#lewy{
+/*background: #222;*/
+    /*height: 150px;*/
+    float: right;
+    width: 20%;
+}
+
+#likeStar{
+    text-align: center;
+    background: #45a340;
+    margin: auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 5px;
+}
+#likeStar:hover{
+    text-align: center;
+    background: red;
+    margin: auto;
+    width: 50%;
+}
+#unlikeStar{
+    text-align: center;
+    background: red;
+    margin: auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 5px;
+}
+#unlikeStar:hover{
+
+    text-align: center;
+    background: #45a340;
+    margin: auto;
+    width: 50%;
 }
