@@ -138,7 +138,6 @@ public class UserController {
         return ResponseEntity.ok().body(false);
     }
 
-    
 
     @PostMapping("")
         // dodanie do bazy

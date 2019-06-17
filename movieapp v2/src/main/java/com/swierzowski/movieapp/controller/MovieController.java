@@ -2,16 +2,16 @@ package com.swierzowski.movieapp.controller;
 
 import com.swierzowski.movieapp.model.Comment;
 import com.swierzowski.movieapp.model.Movie;
+import com.swierzowski.movieapp.model.User;
 import com.swierzowski.movieapp.repository.MovieRepository;
+import com.swierzowski.movieapp.repository.UserRepository;
 import com.swierzowski.movieapp.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @CrossOrigin
@@ -22,6 +22,8 @@ public class MovieController {
     MovieRepository movieRepository;
     @Autowired
     MovieService movieService;
+    @Autowired
+    UserRepository userRepository;
 
     @CrossOrigin
     @GetMapping("all")
@@ -57,5 +59,31 @@ public class MovieController {
         return  ResponseEntity.ok()
                 .body(movie);
     }
+
+    @GetMapping("howManyLike/{movieId}")
+    ResponseEntity<Integer> addToMyFavorites(@PathVariable("movieId") Long movieId){
+        List<Integer> resultList = new ArrayList<>();
+        try{
+
+            List<User> allUsersList = userRepository.findAll();
+
+            allUsersList.forEach(user -> {
+                Set<Movie> movieSet= user.getFavoritesList();
+                Set<Long> idSet = movieSet.stream()
+                        .map(m->m.getId()).collect(Collectors.toSet());
+                if(idSet.contains(movieId))
+                    resultList.add(1);
+            });
+
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return  ResponseEntity.ok().body(resultList.size());
+
+
+    }
+
+
 
 }
