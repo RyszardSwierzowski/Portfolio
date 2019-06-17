@@ -29,7 +29,7 @@ public class User {
     private UserRole role;
     private String avatarUrl;
     @JsonIgnore
-    @OneToMany
+    @ManyToMany
     Set<Movie> favoritesList;
 
 

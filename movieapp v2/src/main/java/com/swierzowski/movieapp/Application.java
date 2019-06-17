@@ -108,7 +108,8 @@ public class Application implements CommandLineRunner {
         listaUlubionych.add(movie1);
         listaUlubionych.add(movie2);
 
-        user1.setFavoritesList(listaUlubionych);
+//        user1.setFavoritesList(listaUlubionych);
+//        user2.setFavoritesList(listaUlubionych);
 
         user2.setName("user2");
         user2.setPassword("root");
