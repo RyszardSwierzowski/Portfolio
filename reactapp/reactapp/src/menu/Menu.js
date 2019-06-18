@@ -70,9 +70,9 @@ class Menu extends React.Component {
                         </li>
 
 
-                        <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
-                                                                                                  value="Szukaj"></input>
-                        </form>
+                        {/*<form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"*/}
+                        {/*                                                                          value="Szukaj"></input>*/}
+                        {/*</form>*/}
                     </ul>
 
 
@@ -93,9 +93,9 @@ class Menu extends React.Component {
                             <Link onClick={this.oNas}>O Nas</Link>  </li>
                         <li>
                             <Link onClick={this.wyloguj}>Wyloguj się</Link></li>
-                        <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
-                                                                                                  value="Szukaj"></input>
-                        </form>
+                        {/*<form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"*/}
+                        {/*                                                                          value="Szukaj"></input>*/}
+                        {/*</form>*/}
                     </ul>
 
 
@@ -123,9 +123,9 @@ class Menu extends React.Component {
 
                         <li>
                             <Link onClick={this.wyloguj}>Wyloguj się</Link> </li>
-                        <form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"
-                                                                                                  value="Szukaj"></input>
-                        </form>
+                        {/*<form><input type="text" name="search" placeholder="Szukaj film"/> <input type="submit"*/}
+                        {/*                                                                          value="Szukaj"></input>*/}
+                        {/*</form>*/}
                     </ul>
 
                 </div>
