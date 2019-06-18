@@ -35,6 +35,7 @@ public class User {
 
     public User() {
         this.role = UserRole.ROLE_NORMAL;
+        this.avatarUrl="0";
     }
 
 
