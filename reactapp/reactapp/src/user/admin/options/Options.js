@@ -12,8 +12,12 @@ class Options extends React.Component {
         this.state = {};
     }
 
-    adminZarzadzanie= () => {
+    adminZarzadzanie_NewMovie= () => {
         window.location.replace('/adminPage/'+sessionStorage.getItem('userId')+'/addMovie');
+
+    }
+    adminZarzadzanie_EditMovie= () => {
+        window.location.replace('/adminPage/'+sessionStorage.getItem('userId')+'/editMovie');
 
     }
 
@@ -25,7 +29,7 @@ class Options extends React.Component {
                         <h1>Wybierz czym chcesz zarządać </h1>
                         <div>
                             <div className="option">
-                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie} >  <div class="itemLeft">Dodaj nowy film</div> </Link>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie_NewMovie} >  <div class="itemLeft">Dodaj nowy film</div> </Link>
 
 
                                 <div className="itemLeft">Dodaj recenzje</div>
@@ -33,7 +37,7 @@ class Options extends React.Component {
                             </div>
 
                             <div className="option2">
-                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie} >  <div className="itemRight">Edytuj film</div> </Link>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie_NewMovie} >  <div className="itemRight">Edytuj film</div> </Link>
 
                                 <div className="itemRight">Edytuj recenzje</div>
                             </div>
