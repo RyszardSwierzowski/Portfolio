@@ -213,6 +213,15 @@ public class UserController {
         return ResponseEntity.ok().body(false);
 
     }
+    @PostMapping("update")
+    ResponseEntity<Boolean> updateUser(@RequestBody User user)
+    {
+        userRepository.save(user);
+        return ResponseEntity.ok().body(true);
+
+
+
+    }
 
 
 

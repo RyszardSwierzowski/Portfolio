@@ -60,6 +60,10 @@ body {
 .floatLeft{
     float: left;
 }
+/*.floatRight{*/
+/*    float: right;*/
+/*    background: red;*/
+/*}*/
 .clearBoth{
     clear: both;
 }
@@ -71,6 +75,13 @@ h2{
     text-align: center;
 }
 
+.EditUserElementItem{
+    margin: 5px!important;
+    width: 240px!important;
+    height: 25px!important;
+    padding: 2px!important;
+    border-radius: 25px!important;
+}
 
 /*.element_Renderowany {*/
 /*    display: block;*/

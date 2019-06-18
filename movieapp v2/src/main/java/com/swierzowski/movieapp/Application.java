@@ -72,6 +72,7 @@ public class Application implements CommandLineRunner {
 
         Movie movie2 = new Movie();
         movie2.setTitlePl("King Kong");
+        movie2.setTitleEng("King Kong");
         movie2.setDescription("Lata 30. XX wieku. Bankrutujący reżyser i głodująca aktorka wyruszają na tajemniczą Wyspę Czaszki, by nagrać film swojego życia, ponieważ w Nowym Jorku panuje wielki kryzys. ");
         movie2.setDirector("Peter Jackson");
         movie2.setImgUrl("http://www.impawards.com/2005/posters/king_kong_ver5.jpg");

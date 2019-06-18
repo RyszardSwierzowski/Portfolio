@@ -125,7 +125,7 @@ class UserFullPage extends React.Component {
                 this.state.allMovies.forEach(m => {
                     if (f === m.id) {
                         allFavorites.push(m)
-                        // allFavorites.push(<FavoriteElement imgUrl={m.imgUrl}
+                        // allFavorites.push(<EditUserElement imgUrl={m.imgUrl}
                         //                                    title={m.title}
                         //                                    description={m.description}     />
 

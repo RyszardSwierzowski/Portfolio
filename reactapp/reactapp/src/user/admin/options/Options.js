@@ -20,6 +20,10 @@ class Options extends React.Component {
         window.location.replace('/adminPage/'+sessionStorage.getItem('userId')+'/editMovie');
 
     }
+    adminZarzadzanie_EditUser= () => {
+        window.location.replace('/adminPage/'+sessionStorage.getItem('userId')+'/users');
+
+    }
 
     render() {
 
@@ -33,11 +37,12 @@ class Options extends React.Component {
 
 
                                 <div className="itemLeft">Dodaj recenzje</div>
-                                <div className="itemCenter">Użytkownicy</div>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie_EditUser} >   <div className="itemCenter">Użytkownicy</div> </Link>
+
                             </div>
 
                             <div className="option2">
-                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie_NewMovie} >  <div className="itemRight">Edytuj film</div> </Link>
+                                <Link class="noneDecorationLink" onClick={this.adminZarzadzanie_EditMovie} >  <div className="itemRight">Edytuj film</div> </Link>
 
                                 <div className="itemRight">Edytuj recenzje</div>
                             </div>
