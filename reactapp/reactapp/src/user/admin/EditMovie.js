@@ -245,7 +245,9 @@ class EditMovie extends React.Component {
                                                                                      placeholder="ID zwiastuna na youtube"
                                                                                      onChange={this.bindowanieFormularza}
                                                                                      required="true"/> <br/>
-                        <label className="labelSize">URL grafiki : </label> <input className="inputSize" type="text"
+                        <label className="labelSize">URL grafiki : </label> <input className="inputSize"
+                                                                                   id="itemDodawania"
+                                                                                   type="text"
                                                                                    name="imgUrl"
                                                                                    defaultValue={this.state.imgUrl}
                                                                                    placeholder="URL grafiki"
@@ -272,13 +274,18 @@ class EditMovie extends React.Component {
                     <Menu/>
                     <div id="body">
 
-                        <div id="content">
-                            <select className="inputSize" name="movieType"  onChange={this.wybierzItemIUsundomyslnyWybor}  required="true"  >
-                                {/**/}
-                                {this.renderComboBox()}
-                            </select>
+                        <div id="content" >
+                            <div className="centrowanko">
 
-                            {this.editMoviePane()}
+                                <h1>Wybierz Film do edycji</h1>
+                                <select className="inputSize" name="movieType"  onChange={this.wybierzItemIUsundomyslnyWybor}  required="true"  >
+
+                                    {this.renderComboBox()}
+                                </select>
+
+                                {this.editMoviePane()}
+                            </div>
+
 
 
                         </div>
