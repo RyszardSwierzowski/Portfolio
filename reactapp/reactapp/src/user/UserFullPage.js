@@ -225,10 +225,13 @@ class UserFullPage extends React.Component {
                 <div>
 
                     <form onSubmit={this.changeAvatar}>
-                        <Link class="noneDecorationLink" onClick={this.avatarPrev} >  <img src={leftArrow} width="40px" height="40px"/> </Link>
-                        <img src={currentAvatar} />
-                        <Link class="noneDecorationLink"  onClick={this.avatarNext}>  <img src={rightArrow} width="40px" height="40px"/>    </Link>
-                        <input className="formSettingsItem" type="submit" value="Zmień"/>
+                        <div>
+                            <Link class="noneDecorationLink" onClick={this.avatarPrev} >  <img src={leftArrow} width="40px" height="40px"/> </Link>
+                            <img src={currentAvatar} />
+                            <Link class="noneDecorationLink"  onClick={this.avatarNext}>  <img src={rightArrow} width="40px" height="40px"/>    </Link><br/>
+                            <input className="formSettingsItem" type="submit" value="Zmień"/>
+                        </div>
+
                     </form>
                 </div>
             )
