@@ -7,6 +7,7 @@ import Stopka from '../stopka/Stopka'
 import Menu from '../menu/Menu'
 import FavoriteElement from './FavoriteElement'
 import {Link} from "react-router-dom";
+import axios from 'axios'
 
 import defaultAvatar from '../img/avatar-DEFAULT.png'
 
@@ -167,19 +168,38 @@ class UserFullPage extends React.Component {
 
     }
 
-    changePassword = () => {
-        alert(this.state.oldPassword + "\n " +
-            this.state.newPassword + "\n " +
-            this.state.newPassword2 + "\n ")
+    changePassword = async () => {
+        let url ='http://localhost:8080/api/user/changePassword/'+sessionStorage.getItem('userId')+'/'+this.state.oldPassword+'/'+this.state.newPassword
+        // console.log(url)
+        if (this.state.newPassword === this.state.newPassword2) {
+            const f =
+                await axios.post(url);
+            if(f.data==true){
+                alert('hasło zostało zmienione')
+            }
+            else alert('stare hasło jest nieprawidłowe')
+        } else if (this.state.newPassword !== this.state.newPassword2) {
+            alert('Nowe hasła nie są zgodne !!! ')
+        }
     }
-    changeEmail = () => {
-        alert(this.state.newEmail + "\n " +
-            this.state.newEmail2 + "\n ")
+    changeEmail = async () => {
+        let url = 'http://localhost:8080/api/user/changeEmail/'+sessionStorage.getItem('userId')+'/'+this.state.newEmail
+
+        if(this.state.newEmail=== this.state.newEmail2){
+            const f =
+                await axios.post(url);
+            alert('Adres email został zmieniony')
+        }
+        else
+            alert('podane adresy e-mail muszą być jednakowe')
+
     }
-    changeAvatar = () => {
-        alert(this.state.oldPassword + "\n " +
-            this.state.newPassword + "\n " +
-            this.state.newPassword2 + "\n ")
+    changeAvatar = async () => {
+        let url = 'http://localhost:8080/api/user/changeAvatar/'+sessionStorage.getItem('userId') + '/' + this.state.avatarNumber
+        // alert(url)
+        const f =
+            await axios.post(url);
+        alert('avatar został zaktualizowany')
     }
 
 
@@ -203,9 +223,13 @@ class UserFullPage extends React.Component {
 
             return (
                 <div>
-                    <Link class="noneDecorationLink" onClick={this.avatarPrev} >  <img src={leftArrow} width="40px" height="40px"/> </Link>
-                    <img src={currentAvatar} />
-                    <Link class="noneDecorationLink"  onClick={this.avatarNext}>  <img src={rightArrow} width="40px" height="40px"/>    </Link>
+
+                    <form onSubmit={this.changeAvatar}>
+                        <Link class="noneDecorationLink" onClick={this.avatarPrev} >  <img src={leftArrow} width="40px" height="40px"/> </Link>
+                        <img src={currentAvatar} />
+                        <Link class="noneDecorationLink"  onClick={this.avatarNext}>  <img src={rightArrow} width="40px" height="40px"/>    </Link>
+                        <input className="formSettingsItem" type="submit" value="Zmień"/>
+                    </form>
                 </div>
             )
 

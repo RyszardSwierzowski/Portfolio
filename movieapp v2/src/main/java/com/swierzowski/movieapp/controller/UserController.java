@@ -154,7 +154,7 @@ public class UserController {
 
         try{
             Optional<User> optionalUser = userRepository.findById(id);
-            if(optionalUser.isPresent()){ 
+            if(optionalUser.isPresent()){
                 user=optionalUser.get();
                 if(user.getPassword().equals(oldP)){
                     user.setPassword(newP);
@@ -162,6 +162,50 @@ public class UserController {
                     return ResponseEntity.ok().body(true);
                 }
             }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.ok().body(false);
+
+    }
+
+    @PostMapping("changeEmail/{id}/{new}")
+    ResponseEntity<Boolean> changeEmail(@PathVariable("new") String newE, @PathVariable("id") Long id){
+        User user;
+
+        try{
+            Optional<User> optionalUser = userRepository.findById(id);
+            if(optionalUser.isPresent()){
+                user=optionalUser.get();
+
+                    user.setEmail(newE);
+                    userRepository.save(user);
+                    return ResponseEntity.ok().body(true);
+                }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.ok().body(false);
+
+    }
+
+    @PostMapping("changeAvatar/{id}/{avatar}")
+    ResponseEntity<Boolean> changeEmail(@PathVariable("avatar") Integer avatar, @PathVariable("id") Long id){
+        User user;
+
+        try{
+            Optional<User> optionalUser = userRepository.findById(id);
+            if(optionalUser.isPresent()){
+                user=optionalUser.get();
+
+                    user.setAvatarUrl(avatar.toString());
+                    userRepository.save(user);
+                    return ResponseEntity.ok().body(true);
+                }
+
 
         } catch (Exception e) {
             e.printStackTrace();

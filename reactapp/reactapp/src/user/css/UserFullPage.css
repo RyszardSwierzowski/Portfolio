@@ -3,6 +3,8 @@
 }
 .lewyDivTest{
     float: left;
+    background: white;
+    border-radius: 25px;
 }
 .ostatniWLini{
     float: left;
@@ -33,4 +35,7 @@
 
 .formSettingsItem{
     margin: 5px;
+}
+#borderRadius{
+    border-radius: 25px;
 }

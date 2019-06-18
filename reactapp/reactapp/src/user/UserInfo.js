@@ -30,8 +30,8 @@ class UserInfo extends React.Component {
         return (
             <div class="element_Renderowany">
                 <div class="lewyDivTest">
-                    <img src={this.props.avatarUrl} alt="Avatar" height="100" width="100"/>
-                    <br/>Witaj {this.props.userName}
+                    <img  id="borderRadius" src={this.props.avatarUrl} alt="Avatar" height="100" width="100"/>
+                    {/*<br/>Witaj {this.props.userName}*/}
                 </div>
 
                 <div class="ostatniWLini">

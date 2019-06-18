@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc998f9-2627-4cf5-a36d-9dbfe65dc383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserFullPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/css/UserFullPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/css/UserFullPage.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,20 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
+            <state relative-caret-position="923">
+              <caret line="199" column="7" lean-forward="true" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#bindowanieFormularza#0;n#UserFullPage#0" />
+                <element signature="e#955#1100#0" />
                 <element signature="e#1313#1456#0" />
                 <element signature="e#1629#1753#0" />
                 <element signature="e#1851#1938#0" />
                 <element signature="e#2020#2467#0" />
                 <element signature="e#2622#3253#0" />
                 <element signature="e#3679#3695#0" />
+                <element signature="e#7738#7768#0" />
+                <element signature="e#8003#8231#0" />
+                <element signature="e#8506#9300#0" />
               </folding>
             </state>
           </provider>
@@ -40,17 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="867">
               <caret line="171" column="50" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/user/css/UserFullPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="663">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,10 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="357">
+              <caret line="32" column="42" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#382#629#0" />
               </folding>
             </state>
           </provider>
@@ -153,11 +158,11 @@
         <option value="$PROJECT_DIR$/src/movie/css/AllMoviesElement.css" />
         <option value="$PROJECT_DIR$/src/stopka/css/Stopka.css" />
         <option value="$PROJECT_DIR$/src/menu/css/Menu.css" />
-        <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
-        <option value="$PROJECT_DIR$/src/user/css/UserFullPage.css" />
         <option value="$PROJECT_DIR$/src/css/MainCss.css" />
         <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/user/UserFullPage.js" />
+        <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
+        <option value="$PROJECT_DIR$/src/user/css/UserFullPage.css" />
       </list>
     </option>
   </component>
@@ -297,12 +302,12 @@
       <workItem from="1560671257166" duration="24570000" />
       <workItem from="1560779744653" duration="16450000" />
       <workItem from="1560798777854" duration="4867000" />
-      <workItem from="1560852473101" duration="8899000" />
+      <workItem from="1560852473101" duration="11838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162985000" />
+    <option name="totallyTimeSpent" value="165924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,44 +670,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/css/UserFullPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="867">
           <caret line="171" column="50" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
+        <state relative-caret-position="923">
+          <caret line="199" column="7" lean-forward="true" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="n#!!block;n#bindowanieFormularza#0;n#UserFullPage#0" />
+            <element signature="e#955#1100#0" />
             <element signature="e#1313#1456#0" />
             <element signature="e#1629#1753#0" />
             <element signature="e#1851#1938#0" />
             <element signature="e#2020#2467#0" />
             <element signature="e#2622#3253#0" />
             <element signature="e#3679#3695#0" />
+            <element signature="e#7738#7768#0" />
+            <element signature="e#8003#8231#0" />
+            <element signature="e#8506#9300#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/UserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#382#629#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/css/UserFullPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
