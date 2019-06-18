@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc998f9-2627-4cf5-a36d-9dbfe65dc383" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/MainCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/MainCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../movieapp v2/src/main/java/com/swierzowski/movieapp/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/UserFullPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/UserFullPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/css/UserFullPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/css/UserFullPage.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="219" column="41" lean-forward="true" selection-start-line="219" selection-start-column="41" selection-end-line="219" selection-end-column="41" />
+            <state relative-caret-position="715">
+              <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#bindowanieFormularza#0;n#UserFullPage#0" />
@@ -41,40 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="110" column="5" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="110" selection-end-column="5" />
-              <folding>
-                <element signature="e#429#670#0" />
-                <element signature="e#719#1690#0" />
-                <element signature="e#832#943#0" />
-                <element signature="e#969#1011#0" />
-                <element signature="e#1036#1081#0" />
-                <element signature="e#1166#1254#0" />
-                <element signature="e#1260#1684#0" />
-                <element signature="e#1737#3437#0" />
-                <element signature="e#1853#3430#0" />
-                <element signature="e#1940#2110#0" />
-                <element signature="e#2204#2719#0" />
-                <element signature="e#2725#3420#0" />
-                <element signature="e#2857#2996#0" />
-                <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
-                <element signature="n#!!block;n#render#0;n#Logowanie#0" />
-                <element signature="e#3726#3843#0" />
-                <element signature="e#3874#7083#0" />
-                <element signature="e#3939#7038#0" />
-                <element signature="e#3985#5048#0" />
-                <element signature="e#4030#5021#0" />
-                <element signature="e#4090#4990#0" />
-                <element signature="e#4162#4516#0" />
-                <element signature="e#4554#4842#0" />
-                <element signature="e#5069#7015#0" />
-                <element signature="e#5153#6988#0" />
-                <element signature="e#5217#6957#0" />
-                <element signature="e#5256#5616#0" />
-                <element signature="e#5654#6021#0" />
-                <element signature="e#6059#6428#0" />
-                <element signature="e#6466#6815#0" />
-              </folding>
+            <state relative-caret-position="765">
+              <caret line="171" column="50" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -186,10 +153,10 @@
         <option value="$PROJECT_DIR$/src/movie/css/AllMoviesElement.css" />
         <option value="$PROJECT_DIR$/src/stopka/css/Stopka.css" />
         <option value="$PROJECT_DIR$/src/menu/css/Menu.css" />
-        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/user/UserInfo.js" />
         <option value="$PROJECT_DIR$/src/user/css/UserFullPage.css" />
         <option value="$PROJECT_DIR$/src/css/MainCss.css" />
+        <option value="$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js" />
         <option value="$PROJECT_DIR$/src/user/UserFullPage.js" />
       </list>
     </option>
@@ -330,12 +297,12 @@
       <workItem from="1560671257166" duration="24570000" />
       <workItem from="1560779744653" duration="16450000" />
       <workItem from="1560798777854" duration="4867000" />
-      <workItem from="1560852473101" duration="8202000" />
+      <workItem from="1560852473101" duration="8899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162288000" />
+    <option name="totallyTimeSpent" value="162985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,47 +684,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logowanieRejestracja/Logowanie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="110" column="5" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="110" selection-end-column="5" />
-          <folding>
-            <element signature="e#429#670#0" />
-            <element signature="e#719#1690#0" />
-            <element signature="e#832#943#0" />
-            <element signature="e#969#1011#0" />
-            <element signature="e#1036#1081#0" />
-            <element signature="e#1166#1254#0" />
-            <element signature="e#1260#1684#0" />
-            <element signature="e#1737#3437#0" />
-            <element signature="e#1853#3430#0" />
-            <element signature="e#1940#2110#0" />
-            <element signature="e#2204#2719#0" />
-            <element signature="e#2725#3420#0" />
-            <element signature="e#2857#2996#0" />
-            <element signature="n#!!block;n#bindowanieFormularza#0;n#Logowanie#0" />
-            <element signature="n#!!block;n#render#0;n#Logowanie#0" />
-            <element signature="e#3726#3843#0" />
-            <element signature="e#3874#7083#0" />
-            <element signature="e#3939#7038#0" />
-            <element signature="e#3985#5048#0" />
-            <element signature="e#4030#5021#0" />
-            <element signature="e#4090#4990#0" />
-            <element signature="e#4162#4516#0" />
-            <element signature="e#4554#4842#0" />
-            <element signature="e#5069#7015#0" />
-            <element signature="e#5153#6988#0" />
-            <element signature="e#5217#6957#0" />
-            <element signature="e#5256#5616#0" />
-            <element signature="e#5654#6021#0" />
-            <element signature="e#6059#6428#0" />
-            <element signature="e#6466#6815#0" />
-          </folding>
+        <state relative-caret-position="765">
+          <caret line="171" column="50" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/UserFullPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="219" column="41" lean-forward="true" selection-start-line="219" selection-start-column="41" selection-end-line="219" selection-end-column="41" />
+        <state relative-caret-position="715">
+          <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="n#!!block;n#bindowanieFormularza#0;n#UserFullPage#0" />

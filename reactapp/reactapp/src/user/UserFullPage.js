@@ -244,8 +244,13 @@ class UserFullPage extends React.Component {
                             <form className="formSettings" onSubmit={this.changePassword}>
                                 <input className="formSettingsItem" type="password" name="oldPassword" required="true"
                                        placeholder="Stare hasło" onChange={this.bindowanieFormularza}/>
-                                <input className="formSettingsItem" type="password" name="newPassword" required="true"
-                                       placeholder="Podaj nowe hasło" onChange={this.bindowanieFormularza}/>
+                                <input className="formSettingsItem"
+                                       type="password"
+                                       name="newPassword"
+                                       required="true"
+                                       placeholder="Podaj nowe hasło"
+                                       onChange={this.bindowanieFormularza}
+                                minLength="4"/>
                                 <input className="formSettingsItem" type="password" name="newPassword2" required="true"
                                        placeholder="Powtórz nowe hasło" onChange={this.bindowanieFormularza}/>
                                 <input className="formSettingsItem" type="submit" value="Zmień"/>

@@ -152,21 +152,24 @@ class Logowanie extends React.Component {
                                     name="loginRejestracja"
                                     placeholder="PODAJ LOGIN"
                                     required="false"
-                                    onChange={this.bindowanieFormularza}/><br/>
+                                    onChange={this.bindowanieFormularza}
+                                    minLength="4" /><br/>
                                 <input
                                     class="formItemLog"
                                     type="password"
                                     name="passwordRejestracja"
                                     placeholder="PODAJ HASŁO"
                                     required="false"
-                                    onChange={this.bindowanieFormularza}/><br/>
+                                    onChange={this.bindowanieFormularza}
+                                    minLength="4" /><br/>
                                 <input
                                     class="formItemLog"
                                     type="password"
                                     name="passwordRejestracja2"
                                     placeholder="POWTÓRZ HASŁO"
                                     required="true"
-                                    onChange={this.bindowanieFormularza}/><br/>
+                                    onChange={this.bindowanieFormularza}
+                                    minLength="4" /><br/>
                                 <input
                                     class="formItemLog"
                                     type="email"

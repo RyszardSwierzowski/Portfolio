@@ -148,5 +148,28 @@ public class UserController {
                 .body(created);
     }
 
+    @PostMapping("changePassword/{id}/{old}/{new}")
+    ResponseEntity<Boolean> changePassword(@PathVariable("old") String oldP, @PathVariable("new") String newP, @PathVariable("id") Long id){
+        User user;
+
+        try{
+            Optional<User> optionalUser = userRepository.findById(id);
+            if(optionalUser.isPresent()){ 
+                user=optionalUser.get();
+                if(user.getPassword().equals(oldP)){
+                    user.setPassword(newP);
+                    userRepository.save(user);
+                    return ResponseEntity.ok().body(true);
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.ok().body(false);
+
+    }
+
+
 
 }
