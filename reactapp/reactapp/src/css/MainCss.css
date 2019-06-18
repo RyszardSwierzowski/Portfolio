@@ -91,3 +91,38 @@ h2{
 /*    margin-bottom: 5px;*/
 /*    border-radius: 10px;*/
 /*}*/
+#test{
+    /*background: red!important;*/
+}
+#marginesLewy{
+    display: block;
+    background: #222;
+    margin-left: 65%;
+    height: 200px;
+    /*margin-top: 50px;*/
+    text-align: center;
+
+}
+.formFiltr{
+    width: 250px;
+    margin: 5px;
+    padding: 3px;
+}
+.centrowanko{
+    /*background-color: red!important;*/
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+#itemDodawania{
+    margin-bottom: 30px;
+}
+#xxxxx{
+    height: 25px;
+    border-radius: 25px;
+}
+.centerDeadLine{
+    text-align: center;
+}

@@ -72,10 +72,11 @@
 .inputSize{
     margin: 5px;
     width: 500px;
+
 }
 
 #addNewMovieSize{
-    min-height: 600px;
+    min-height: 650px;
     padding: auto;
     width: 680px;
     margin: auto;

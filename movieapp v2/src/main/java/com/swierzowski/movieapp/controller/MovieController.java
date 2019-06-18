@@ -3,6 +3,7 @@ package com.swierzowski.movieapp.controller;
 import com.swierzowski.movieapp.model.Comment;
 import com.swierzowski.movieapp.model.Movie;
 import com.swierzowski.movieapp.model.User;
+import com.swierzowski.movieapp.model.movieEnums.MovieType;
 import com.swierzowski.movieapp.repository.MovieRepository;
 import com.swierzowski.movieapp.repository.UserRepository;
 import com.swierzowski.movieapp.service.MovieService;
@@ -27,51 +28,51 @@ public class MovieController {
 
     @CrossOrigin
     @GetMapping("all")
-    ResponseEntity<List<Movie>> getAllMovies(){
+    ResponseEntity<List<Movie>> getAllMovies() {
         return ResponseEntity.ok()
                 .body(movieRepository.findAll());
     }
+
     @CrossOrigin
     @GetMapping("/{id}")
-    ResponseEntity<Movie> getMovie(@PathVariable("id") Long id){
+    ResponseEntity<Movie> getMovie(@PathVariable("id") Long id) {
         Optional<Movie> optionalMovie = movieRepository.findById(id);
         Movie resulMovie = new Movie();
-        if(optionalMovie.isPresent()){
+        if (optionalMovie.isPresent()) {
             resulMovie = optionalMovie.get();
-            List<Comment> commentList=optionalMovie.get().getCommentList();
+            List<Comment> commentList = optionalMovie.get().getCommentList();
             commentList = commentList.stream()
                     .sorted(Comparator.comparing(Comment::getId))
                     .collect(Collectors.toList());
             resulMovie.setCommentList(commentList);
 
-        }
-
-        else
+        } else
             resulMovie.setId(-1L);
         return ResponseEntity.ok()
                 .body(resulMovie);
 
     }
+
     @CrossOrigin
     @PostMapping("")
-    ResponseEntity<Movie> addNewMovie(@RequestBody Movie movie){
+    ResponseEntity<Movie> addNewMovie(@RequestBody Movie movie) {
         movieService.save(movie);
-        return  ResponseEntity.ok()
+        return ResponseEntity.ok()
                 .body(movie);
     }
 
     @GetMapping("howManyLike/{movieId}")
-    ResponseEntity<Integer> addToMyFavorites(@PathVariable("movieId") Long movieId){
+    ResponseEntity<Integer> addToMyFavorites(@PathVariable("movieId") Long movieId) {
         List<Integer> resultList = new ArrayList<>();
-        try{
+        try {
 
             List<User> allUsersList = userRepository.findAll();
 
             allUsersList.forEach(user -> {
-                Set<Movie> movieSet= user.getFavoritesList();
+                Set<Movie> movieSet = user.getFavoritesList();
                 Set<Long> idSet = movieSet.stream()
-                        .map(m->m.getId()).collect(Collectors.toSet());
-                if(idSet.contains(movieId))
+                        .map(m -> m.getId()).collect(Collectors.toSet());
+                if (idSet.contains(movieId))
                     resultList.add(1);
             });
 
@@ -79,11 +80,25 @@ public class MovieController {
         } catch (Exception e) {
             System.out.println(e);
         }
-        return  ResponseEntity.ok().body(resultList.size());
+        return ResponseEntity.ok().body(resultList.size());
 
 
     }
 
+    @CrossOrigin
+    @GetMapping("getFiltered/{g}")
+    ResponseEntity<List<Movie>> getAllMoviesFilter(@PathVariable("g") String gatunek) {
+        System.out.println(MovieType.DRAMAT.toString().equals(gatunek.toUpperCase()));
+
+        List<Movie> movieList = movieRepository.findAll();
+        movieList =
+                movieList.stream()
+                        .filter(m -> m.getMovieType().toString().equals(gatunek.toUpperCase()))
+                        .collect(Collectors.toList());
+
+        return ResponseEntity.ok()
+                .body(movieList);
+    }
 
 
 }

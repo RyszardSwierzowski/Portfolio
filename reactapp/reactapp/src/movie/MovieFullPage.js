@@ -124,9 +124,10 @@ class MovieFullPage extends React.Component {
                             <MovieTrailer trailerUrl={this.state.trailerUrl}/>
                         </div>
 
-                        <div className="element_Renderowany">
-                            <Recenzje/>
-                        </div>
+                        {/*<div className="element_Renderowany">*/}
+                        {/*    <Recenzje/>*/}
+                        {/*</div>*/}
+                        {/* todo RECENZJA*/}
 
                         <div className="element_Renderowany">
                             KOMENTARZE
