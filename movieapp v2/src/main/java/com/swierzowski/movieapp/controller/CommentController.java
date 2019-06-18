@@ -5,7 +5,7 @@ import com.swierzowski.movieapp.model.Comment;
 import com.swierzowski.movieapp.model.User;
 import com.swierzowski.movieapp.repository.UserRepository;
 import com.swierzowski.movieapp.service.CommentService;
-import jdk.nashorn.internal.parser.JSONParser;
+//import jdk.nashorn.internal.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
